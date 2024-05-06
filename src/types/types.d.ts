@@ -29,12 +29,13 @@ export interface Application {
 export interface OptionsSelect {
   nameItems: NameItemsSelected
   textOption: string
+  defaultName?: string | null
 }
 
 export interface AplicationStateReducer {
   applications: Application[]
 }
 
-export type AplicationActionReducer = { type: 'FILTER_BY_SYSTEM_CORPORAL', payload: SystemCorporal }
-| { type: 'FILTER_BY_STAGE', payload: Stage }
-| { type: 'RESET' }
+export type AplicationActionReducer =
+  | { type: 'FILTER', payload: { stage: Stage | null, system: SystemCorporal | null } }
+  | { type: 'RESET' }

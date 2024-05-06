@@ -15,11 +15,11 @@ interface SelectProps {
 
 export function Select ({
   items,
-  options: { nameItems, textOption },
+  options: { nameItems, textOption, defaultName },
   className = '',
   filter
 }: SelectProps) {
-  const [selected, setSelected] = useState<string>(nameItems)
+  const [selected, setSelected] = useState<string>(defaultName ?? nameItems)
 
   const onChange = (item: string) => {
     setSelected(item)

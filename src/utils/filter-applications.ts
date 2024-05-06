@@ -1,12 +1,12 @@
-import { type Application, type SearchParamsApplication } from '@/types/types'
+import { type Stage, type SystemCorporal, type Application } from '@/types/types'
 
-export const filterApplications = (applications: Application[], { etapa, sistema }: SearchParamsApplication) => {
-  return applications.filter(({ stage, systemsCorporals }) => {
-    if (sistema != null && !systemsCorporals.includes(sistema)) {
+export const filterApplications = (applications: Application[], { stage, system }: { stage: Stage | null, system: SystemCorporal | null }) => {
+  return applications.filter(({ stage: s, systemsCorporals }) => {
+    if (system != null && !systemsCorporals.includes(system)) {
       return false
     }
 
-    if (etapa != null && !stage.includes(etapa)) {
+    if (stage != null && !s.includes(stage)) {
       return false
     }
 

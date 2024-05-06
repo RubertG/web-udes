@@ -1,25 +1,12 @@
 import { type AplicationActionReducer, type AplicationStateReducer } from '@/types/types'
 import { applications as apps } from '@/data/applications'
+import { filterApplications } from '@/utils/filter-applications'
 
 export const reducer = (state: AplicationStateReducer, action: AplicationActionReducer) => {
-  if (action.type === 'RESET') {
+  if (action.type === 'FILTER') {
     return {
       ...state,
-      applications: apps
-    }
-  }
-
-  if (action.type === 'FILTER_BY_SYSTEM_CORPORAL') {
-    return {
-      ...state,
-      applications: apps.filter(app => app.systemsCorporals.includes(action.payload))
-    }
-  }
-
-  if (action.type === 'FILTER_BY_STAGE') {
-    return {
-      ...state,
-      applications: apps.filter(app => app.stage.includes(action.payload))
+      applications: filterApplications(apps, action.payload)
     }
   }
 
