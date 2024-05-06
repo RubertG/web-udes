@@ -18,13 +18,13 @@ export const CardApplication: FC<CardApplicationProps> = ({ application: { name,
       className='block rounded-lg shadow-principal overflow-hidden p-3 bg-bg-100 border border-gray-200 hover:scale-105 transition-all'
     >
       <picture
-        className='h-40 rounded-lg overflow-hidden'
+        className='rounded-lg min-h-[11.8rem] object-contain overflow-hidden'
       >
         <img
           src={`apps-img/${image}`}
           alt={`Imagen referente a ${name}`}
           loading='lazy'
-          className='w-full rounded-lg object-cover'
+          className='w-full min-h-[10rem] h-full rounded-lg'
         />
       </picture>
       <h3

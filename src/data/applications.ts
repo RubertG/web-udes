@@ -768,7 +768,7 @@ export const applications: Application[] = [
       name: 'Viabilidad, usabilidad y disfrute de un programa de ejercicio en el hogar impartido a través de una aplicación de ejercicio para la salud musculoesquelética en adultos mayores que viven en la comunidad: estudio piloto prospectivo a corto plazo',
       url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/21094'
     }],
-    image: 'physiapp-2.webp',
+    image: 'physiapp-2.png',
     linksInfoApp: [{
       name: 'Enlace de descarga en la Play Store',
       url: 'https://play.google.com/store/apps/details?id=com.physitrack.physiapp&hl=es_DO'
