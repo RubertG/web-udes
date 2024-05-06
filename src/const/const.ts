@@ -11,6 +11,7 @@ export const USABILITY = {
   THERAPIST: 'fisioterapeutas',
   PATIENT: 'pacientes',
   USERS: 'usuarios',
+  INVESTIGATORS: 'investigadores',
   ESTUDENTS: 'estudiantes universitarios o posgraduados profesionalmente calificados'
 } as const
 
@@ -27,7 +28,9 @@ export const SYSTEMS_CORPORALS = {
   SENSORIAL: 'sensorial',
   NEUROMOTOR: 'neuromotor',
   ENDOCRINE: 'endocrino',
-  CARDIORESPIRATORY: 'cardiorespiratorio'
+  CARDIORESPIRATORY: 'cardiorespiratorio',
+  VESTIBULAR: 'vestibular',
+  NERVOUS_CENTRAL: 'nervioso central'
 } as const
 
 export const NAME_ITEMS_SELECT = {

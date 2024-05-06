@@ -3,151 +3,205 @@ import { type Application } from '@/types/types'
 
 export const applications: Application[] = [
   {
-    title: 'Uso de un programa de terapia de ejercicio basado en una aplicación que incluye técnicas cognitivo-conductuales para el tratamiento de la claudicación intermitente. SVS SET (Sistema de evaluación de seguridad vascular).',
-    summary: '<p>Las guías de práctica clínica recomiendan la terapia con ejercicio supervisado (SET) como terapia de primera línea para pacientes con enfermedad arterial periférica (EAP) y claudicación intermitente (CI). </p><p>Los criterios de uso apropiado de la CI de la Sociedad de Cirugía Vascular consideran que la terapia con ejercicios (TE) es apropiada para todos los pacientes con CI. Sin embargo, el cumplimiento de las recomendaciones para el uso de ET suele ser deficiente debido a la falta de disponibilidad, los requisitos de viaje de los pacientes y el costo. </p><p>Los resultados de los programas de TE en el hogar han sido mixtos con una tendencia hacia mejores resultados con una participación más frecuente del paciente. Se evaluó la viabilidad, el uso y la eficacia de un programa de ET estructurado basado en una aplicación de 12 semanas que utiliza técnicas de terapia cognitivo-conductual (TCC) para la CI.</p>',
-    technology: 'Inteligencia artificial: Se utiliza para calcular la puntuación de riesgo individualizada.',
-    stage: [STAGES.IMPLEMENTATION],
-    usability: [USABILITY.THERAPIST],
-    accessibility: 'Compatibilidad con dispositivos: SVS SET es compatible con la mayoría de los navegadores web y dispositivos móviles. Tecnologías de asistencia: SVS SET es compatible con algunas tecnologías de asistencia.',
-    mode: 'La herramienta utiliza un algoritmo para calcular una puntuación de riesgo individualizada para el paciente. La puntuación de riesgo se puede utilizar para ayudar a los médicos a tomar decisiones sobre el tratamiento y la planificación preoperatoria.',
-    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NERVOUS],
-    barriers: 'Familiaridad  con la herramienta.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.jvs.2022.06.087',
-    image: 'svs.png',
-    name: 'SVS SET'
-  }, {
-    title: 'Aplicación de mentor de fisioterapia integrada basada en Kinect para lesiones en el hombro',
-    summary: '<p>Con la creciente tasa de personas discapacitadas en el mundo, el número de personas que necesitan fisioterapia está aumentando. La mayoría de las personas discapacitadas con hombros dañados deben realizar ejercicios de fisioterapia. Los sistemas de telerehabilitación que utilizan tecnologías desarrolladas tienen ventajas sobre los métodos de fisioterapia convencionales. </p><p>Estos sistemas tienen el potencial de mejorar la comunicación entre pacientes y fisioterapeutas. También permiten compartir información y datos médicos más fácilmente.También permiten compartir información y datos médicos más fácilmente.</p>',
-    technology: 'Software deRealidad aumentada (sensor Kinect) producido por Microsoft',
+    description: '<p>El sensor Kinect en terapia es una  herramienta eficaz para ayudar a los pacientes en el movimiento y fortalecimiento, tiene la capacidad de detectar y rastrear el movimiento del cuerpo en tiempo real, tanto el terapeuta como el paciente pueden evaluar la calidad y precisión de los movimientos. Además, el sensor proporciona retroalimentación visual y auditiva instantánea, lo que permite al paciente corregir su postura y movimiento de manera adecuada.</p>',
+    technology: 'Software de realidad aumentada producido por Microsoft.',
     stage: [STAGES.MAINTENANCE],
     usability: [USABILITY.THERAPIST],
     accessibility: 'compatible con Windows 10.',
-    mode: 'El sensor Kinect puede comprender ejercicios asistidos,monitoreo,  seguimiento del progreso, retroalimentación en tiempo real sobre el movimiento.',
+    mode: 'El sensor Kinect puede comprender ejercicios asistidos, monitoreo, seguimiento del progreso, retroalimentación en tiempo real sobre el movimiento.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'Requiere un espacio de juego despejado para funcionar correctamente. La precisión del Kinect puede variar según el entorno y la distancia entre el usuario y el sensor. Se requiere cierto nivel de técnica para configurar y usar el Kinect con software de rehabilitación.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.future.2021.04.003',
+    barriers: 'Requiere un espacio de juego despejado para funcionar correctamente. La precisión del Kinect puede variar según el entorno y la distancia entre el usuario y el sensor. Además, se requiere cierto nivel de técnica para configurar y usar el Kinect con software de rehabilitación.',
+    urls: [{
+      name: 'Aplicación de mentor de fisioterapia integrada basada en Kinect para lesiones en el hombro.',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.future.2021.04.003'
+    }],
     image: 'sensor-kinect.png',
     name: 'sensor Kinect'
-  }, {
-    title: 'Cumplimiento del ejercicio Aplicación móvil para la osteoartritis de rodilla: protocolo para el ensayo controlado aleatorio MappKO',
-    summary: '<p>En personas con osteoartritis de rodilla (OA), la participación continua en ejercicios, particularmente con ejercicios de fortalecimiento, es fundamental para el tratamiento. La adherencia del paciente al ejercicio prescrito generalmente disminuye una vez que finalizan las consultas con un médico. Las aplicaciones móviles (apps) pueden incorporar técnicas de cambio de comportamiento que pueden ayudar a la adherencia, optimizando potencialmente los resultados clínicos.</p>',
-    technology: 'Software-My Exercise Messages’, Inteligencia Artificial',
+  },
+  {
+    description: '<p>My Exercise Messages es una aplicación gratuita en Apple App Store y Google Play,diseñada para asistir a personas que padecen osteoartritis. Permite una rutina de ejercicios de manera regular, compatible con cualquier plan de ejercicios recomendado por profesionales de la salud,establece objetivos semanales de ejercicio y recibe recordatorios personalizados para registrar las sesiones de actividad física, la misma funciona rastreando la finalización de las sesiones de ejercicio semanales, proporciona mensajes regulares facilitando el ejercicio semanal y mensajes personalizados en apoyo a superar las barreras individuales para la participación en el ejercicio.</p>',
+    technology: 'Software de Inteligencia Artificial',
     stage: [STAGES.DEVELOPMENT],
-    usability: [USABILITY.THERAPIST, USABILITY.PATIENT],
-    accessibility: 'Accesibles para personas con discapacidad auditiva y baja visión. Gratuita Plan Básico Interfaz sencilla e intuitiva que facilita la navegación. Disponible para dispositivos iOS con iOS 11.0 o posterior. Esto incluye iPhones, iPads y iPod touch.',
-    mode: 'Comprende ejercicios asitidos y monitoreo remoto, educacion en salud, permitiendo  registrar la duracion, el tiempo y la intensidad de cada ejercicio, ofrece un seguimiento del progreso mostrando la distancia recorrida, las calorías quemadas y otros indicadores y monitoriza el avance hacia su logro.',
+    usability: [USABILITY.THERAPIST, USABILITY.USERS],
+    accessibility: 'Accesibles para personas con discapacidad auditiva y baja visión. La aplicación tiene un plan básico de uso gratuito, tiene una interfaz sencilla e intuitiva que facilita la navegación. Está disponible para dispositivos iOS con iOS 11.0 o posterior. Esto incluye iPhones, iPads y iPod touch.',
+    mode: 'Comprende ejercicios asitidos y monitoreo remoto, educación en salud, permitiendo  registrar la duración, el tiempo y la intensidad de cada ejercicio, ofrece un seguimiento del progreso mostrando la distancia recorrida, las calorías quemadas y otros indicadores y monitoriza el avance hacia su logro.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'Solo disponible en el idioma INGLES y dificultades para usar la aplicación debido a su falta de familiaridad con la tecnología',
-    url: 'https://bmcmusculoskeletdisord-biomedcentral-com.ezproxy.udes.edu.co/articles/10.1186/s12891-022-05816-6#citeas:~:text=%2C%20874%20(2022).-,https%3A//doi%2Dorg.ezproxy.udes.edu.co/10.1186/s12891%2D022%2D05816%2D6,-Descargar%20cita',
+    barriers: 'Solo disponible en el idioma ingles y dificultades para usar la aplicación debido a su falta de familiaridad con la tecnología',
+    urls: [{
+      name: 'Cumplimiento del ejercicio Aplicación móvil para la osteoartritis de rodilla: protocolo para el ensayo controlado aleatorio MappKO.',
+      url: 'https://bmcmusculoskeletdisord-biomedcentral-com.ezproxy.udes.edu.co/articles/10.1186/s12891-022-05816-6#citeas:~:text=%2C%20874%20(2022)'
+    }, {
+      name: 'Descargar cita.',
+      url: 'https%3A//doi%2Dorg.ezproxy.udes.edu.co/10.1186/s12891%2D022%2D05816%2D6'
+    }],
     image: 'my-exercise-messages.png',
-    name: 'My Exercise Messages’'
-  }, {
-    title: 'Desarrollo de una aplicación web progresiva basada en evidencia para promover la terapia con ejercicios y la telemonitorización para personas con síndrome de dolor femororrotuliano: un estudio de usabilidad',
-    summary: '<p>Las aplicaciones móviles de salud (mHealth) desempeñan un papel emergente en el manejo de enfermedades crónicas. Este estudio tuvo como objetivo diseñar, desarrollar y evaluar la usabilidad de una aplicación mHealth de terapia de ejercicio en personas con síndrome de dolor femororrotuliano (PFPS). </p><p>Los objetivos de este artículo presenta los procedimientos de diseño, desarrollo y evaluación de la aplicación conceptual mHelath, denominada Vitoapp, utilizando el enfoque de aplicación web progresiva (PWA).</p>',
-    technology: 'Software Vitoapp, Inteligencia Artificial',
+    linksInfoApp: [{
+      name: 'Descarga la aplicación en la App Store.',
+      url: 'https://apps.apple.com/nz/app/my-exercise-messages/id1529053965'
+    }],
+    name: 'My Exercise Messages'
+  },
+  {
+    description: '<p>Esta aplicación ofrece una herramienta de medición para evaluar la fuerza, flexibilidad y rango de movimiento de la rodilla, identificando posibles desequilibrios musculares que podrían estar relacionados con el dolor femororrotuliano (PFPS).</p><p>Además, proporciona rutinas de ejercicios adaptadas a cada usuario para fortalecer los músculos  y aumentar la flexibilidad, asimismo, permite monitorear el progreso del paciente a lo largo del tiempo, facilitando un seguimiento detallado de su evolución.</p>',
+    technology: 'Software',
     stage: [STAGES.DEVELOPMENT],
     usability: [USABILITY.THERAPIST, USABILITY.PATIENT],
-    accessibility: 'No gratuita, prueba gratis. Compatible con los sistemas operativos Windows, Android o IOS (teléfonos o tabletas) Accesibles para personas con discapacidad auditiva y baja visión.',
-    mode: 'Esta aplicación proporciona ejercicios basados en evidencia y monitoreo  de forma remota brinda educacion a los usuarios.',
+    accessibility: 'No gratuita, prueba gratis. Es compatible con los sistemas operativos Windows, Android o IOS (teléfonos o tabletas) y accesibles para personas con discapacidad auditiva y baja visión.',
+    mode: 'Esta aplicación proporciona ejercicios basados en evidencia y monitoreo de forma remota brinda educacion a los usuarios.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
     barriers: 'El uso de esta herramienta tiene algunas limitaciones en las cuales se encuentra que los usuarios  prefieren utilizar la aplicación en sus teléfonos móviles y no en el sistema operativo Windows. Además no permite enviar archivos en formato de vídeo lo que imposibilita controlar la exactitud de la realización del ejercicio.',
-    url: 'https://doi.org/10.5812/semj-126461',
+    urls: [{
+      name: 'Desarrollo de una aplicación web progresiva basada en evidencia para promover la terapia con ejercicios y la telemonitorización para personas con síndrome de dolor femororrotuliano: un estudio de usabilidad',
+      url: 'https://doi.org/10.5812/semj-126461'
+    }],
     image: 'vitoapp.png',
     name: 'Vitoapp'
-  }, {
-    title: 'Digitalización de la rehabilitación pulmonar multidisciplinar en EPOC con una aplicación para smartphones: un estudio piloto observacional internacional',
-    summary: '<p>En cuanto a la EPOC, la rehabilitación pulmonar (RP) tiene un efecto positivo en la progresión de la enfermedad y la mortalidad, es costo-efectiva y forma parte de las recomendaciones de las guías internacionales.</p><p> Solo una minoría de los pacientes se beneficia de la RP convencional debido a la falta de recursos, la adherencia a las pautas de los médicos o la motivación de los pacientes. Nuevas terapias digitales como Kaia COPD, una aplicación para teléfonos inteligentes que digitaliza las relaciones públicas en la EPOC, son soluciones prometedoras para llenar este vacío.</p>',
+  },
+  {
+    description: '<p>La aplicación genera un plan de acción personalizado adaptado a los síntomas y necesidades individuales del usuario, incluye ejercicios de relajación y técnicas de respiración para mejorar la capacidad pulmonar,consejos para manejar la EPOC, así como el seguimiento de los síntomas, facilita el seguimiento manual o mediante dispositivos de salud conectados para registrar síntomas como dificultad para respirar y tos. </p><p>Además, proporciona información sobre la EPOC y su manejo, cuenta con un foro comunitario para que los usuarios se conecten entre sí y reciban apoyo de profesionales de la salud.</p>',
     technology: 'Software de Inteligencia artificial',
     stage: [STAGES.IMPLEMENTATION, STAGES.MAINTENANCE],
     usability: [USABILITY.THERAPIST, USABILITY.PATIENT],
-    accessibility: 'No gratuita, prueba gratis requiere de suscripcion mensualAccesible para personas con discapacidad visual o auditiva,.Compatible con teléfonos inteligentes y tabletas (iOS y Android) ,No esta disponible para colombia.',
-    mode: 'esta app es especifica para el  diagnostico de EPOC el cual comprende ejercicios asistidos,educacion en salud,  retroalimentación sobre los ejercicios de respiración del usuario,seguimiento de sus síntomas.',
+    accessibility: 'No gratuita, prueba gratis requiere de suscripcion mensualAccesible para personas con discapacidad visual o auditiva. Compatible con teléfonos inteligentes y tabletas (iOS y Android) pero no esta disponible para Colombia.',
+    mode: 'esta app es especifica para el diagnostico de EPOC el cual comprende ejercicios asistidos,educacion en salud,  retroalimentación sobre los ejercicios de respiración del usuario,seguimiento de sus síntomas.',
     systemsCorporals: ['cardiorespiratorio'],
-    barriers: 'Interfaz de usuario puede no ser intuitiva para todos los usuarios, lo que puede dificultar la navegación y el uso de la aplicación.Disponer de un dispositivo smartphone con acceso a Internet.',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/30538444/',
+    barriers: 'Interfaz de usuario puede no ser intuitiva para todos los usuarios, lo que puede dificultar la navegación y el uso de la aplicación. Se necesita disponer de un dispositivo smartphone con acceso a Internet.',
+    urls: [{
+      name: 'Digitalización de la rehabilitación pulmonar multidisciplinar en EPOC con una aplicación para smartphones: un estudio piloto observacional internacional',
+      url: 'https://pubmed.ncbi.nlm.nih.gov/30538444/'
+    }],
     image: 'kaia-copd.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Play Store',
+      url: 'https://play.google.com/store/apps/details?id=com.kaiahealth.copd'
+    }],
     name: 'Kaia COPD'
-  }, {
-    title: 'Dispositivo de sensor de movimiento portátil para facilitar la rehabilitación en pacientes con capsulitis adhesiva del hombro: estudio piloto para evaluar la viabilidad',
-    summary: '<p>La capsulitis adhesiva (CA) del hombro es un trastorno común que reduce dolorosamente el rango de movimiento (ROM) del hombro entre personas de mediana edad. Aunque se recomienda ampliamente la fisioterapia con ejercicios en el hogar para restaurar el ROM en el tratamiento de la AC, los resultados clínicos varían debido al cumplimiento inconsistente del paciente. </p><p>Nuestro objetivo fue verificar la viabilidad de un modelo de tratamiento que implica la aplicación de un dispositivo portátil con sensor de movimiento para ayudar a los pacientes a realizar ejercicios en casa para mejorar el cumplimiento del entrenamiento y la precisión de los ejercicios, con el objetivo final de mejorar la recuperación funcional de pacientes con CA.</p>',
+  },
+  {
+    description: '<p>La aplicación ofrece rutinas diarias de ejercicios para los hombros con instrucciones detalladas, utilizando información precisa sobre el rango de movimiento (ROM) del hombro obtenida a través de tres sensores portátiles, presenta siete series de ejercicios de entrenamiento domiciliario, incluyendo estiramientos específicos para diferentes direcciones de movimiento del hombro,estas rutinas son asignadas como "tareas diarias" por fisioterapeutas o médicos, con demostraciones proporcionadas por un avatar 3D que refleja los movimientos del usuario a través de la información angular de los sensores de movimiento. Cada usuario tiene una cuenta personalizada para acceder a su progreso diario y la finalización de las tareas asignadas.</p>',
     technology: 'Inteligencia artificial Realidad aumentada, internet de las cosas.',
     stage: [STAGES.DEVELOPMENT],
     usability: [USABILITY.THERAPIST, USABILITY.PATIENT],
     accessibility: 'Requiere suscripción premium Limitación para personas con discapacidades cognitivas. La aplicación no es compatible con lectores de pantalla ni con otros dispositivos de asistencia.',
     mode: 'Esta app brinda rehabilitación asistida por sensores de movimiento, Rastrea los movimientos, monitorea los datos registrados por los pacientes.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'aplicación móvil  requiere ser  utiliza junto con un dispositivo sensor de movimiento para la rehabilitación del hombro. Los movimientos prescritos no deben exceder el rango de detección de Bluetooth. Requiere un área despejada donde el usuario pueda realizar movimientos como doblar la cintura y levantar las piernas Se requiere de mayor espacio para grabaciones en tiempo real dependiendo del ejercicio prescrito.',
-    url: 'https://doi.org/10.2196/17032',
+    barriers: 'aplicación móvil requiere ser utiliza junto con un dispositivo sensor de movimiento para la rehabilitación del hombro. Los movimientos prescritos no deben exceder el rango de detección de Bluetooth. Requiere un área despejada donde el usuario pueda realizar movimientos como doblar la cintura y levantar las piernas Se requiere de mayor espacio para grabaciones en tiempo real dependiendo del ejercicio prescrito.',
+    urls: [{
+      name: 'Dispositivo de sensor de movimiento portátil para facilitar la rehabilitación en pacientes con capsulitis adhesiva del hombro: estudio piloto para evaluar la viabilidad',
+      url: 'https://doi.org/10.2196/17032'
+    }],
     image: 'boostfix.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Play Store',
+      url: 'https://play.google.com/store/apps/details?id=com.compal.boostfix_user_mpd_std&hl=es_CO&gl=US'
+    }],
     name: 'BoostFix'
-  }, {
-    title: 'El uso de wearables para el diagnóstico y tratamiento de la enfermedad de Parkinson',
-    summary: '<p>La enfermedad de Parkinson (EP) es el segundo trastorno neurodegenerativo más común, con un número cada vez mayor de pacientes afectados. Muchos pacientes carecen de atención adecuada debido a la falta de neurólogos o geriatras especializados, y los pacientes mayores experimentan dificultades para viajar largas distancias para llegar a sus médicos tratantes. Una nueva opción para superar estos obstáculos sería la telemedicina y los wearables. </p><p>Durante la última década, el desarrollo de sensores portátiles ha permitido la monitorización continua de la bradicinesia y la discinesia. Mientras tanto, otros sistemas también pueden detectar temblores, congelación de la marcha y problemas al caminar. </p><p>Los sistemas desarrollados más recientemente cubren ambos lados del cuerpo e incluyen aplicaciones para teléfonos inteligentes donde los pacientes deben registrar su ingesta de medicamentos y su bienestar. A su vez, los médicos reciben consejos sobre cómo cambiar la medicación del paciente y recomendaciones sobre terapias de apoyo adicionales, como la fisioterapia. </p><p>El uso de aplicaciones para teléfonos inteligentes también puede adaptarse para detectar síntomas de la EP como bradicinesia, temblores, anomalías de la voz o cambios en la expresión facial. Estas herramientas se pueden utilizar para que la población general detecte la EP de forma temprana o para que los pacientes con EP conocida detecten el deterioro. Es de destacar que la mayoría de los pacientes con EP pueden utilizar estas herramientas digitales. </p><p>En los tiempos modernos, los sensores portátiles y la telemedicina abren una nueva ventana de oportunidades para los pacientes con EP que son fáciles de usar y accesibles para la mayoría de la población. © 2023, El autor(es).</p>',
+  },
+  {
+    description: '<p>Prognosis monitorea activamente el habla, la escritura y la expresión facial de los pacientes, detecta  disartrofonía y festinación de la lengua,a través del análisis de voz durante llamadas telefónicas, mientras que el uso del teclado revela bradicinesia e hipocinesia, temblor y rigidez,la hipomimia y depresión se evalúa a través de selfies, analizando la expresión facial sin almacenar imágenes. Además, las emociones y el estado de ánimo se evaluan a través de mensajes de texto después de aplicar un esquema de codificación.</p><p> KinetiGraph es un dispositivo de registro de datos que se usa en la muñeca. Es una forma de acelerometría que recoge datos sobre el movimiento, el paciente usa el sensor de la muñeca de la mano más afectada y se recoge una medida cada dos minutos, suministra datos sobre bradicinesia, discinesia y temblores, detecta movimientos tácitos y la retirada del dispositivo desde la muñeca. Compara el rendimiento de los parámetros de pacientes con la función motora de un grupo control sanos.</p>',
     technology: 'Software: Prognosis. KinetiGraph (PKG)',
     stage: [STAGES.DEVELOPMENT],
-    usability: [USABILITY.THERAPIST, USABILITY.PATIENT],
+    usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'Disponibilidad especifica bajo consentimiento informado',
-    mode: 'Es utilizado para el diagnostico de parkinson, proporciona monitoreo continuo para recopilar datos sobre el movimiento como temblores y rigidez, congelación de la marcha y problemas al caminar, cambios en la expresión facial, bradicinesia y la discinesia,disartrofonía',
-    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.INMUNE, SYSTEMS_CORPORALS.DIGESTIVE],
+    mode: 'Es utilizado para el diagnostico de parkinson, proporciona monitoreo continuo para recopilar datos sobre el movimiento como temblores y rigidez, congelación de la marcha y problemas al caminar, cambios en la expresión facial, bradicinesia y la discinesia, disartrofonía',
+    systemsCorporals: [SYSTEMS_CORPORALS.NERVOUS_CENTRAL],
     barriers: 'Última actualizacion 25 feb 2020, disponible en ingles.',
-    url: 'https://doi.org/10.1007/s00702-022-02575-5',
+    urls: [{
+      name: 'El uso de wearables para el diagnóstico y tratamiento de la enfermedad de Parkinson',
+      url: 'https://doi.org/10.1007/s00702-022-02575-5'
+    }],
     image: 'prognosis.png',
+    linksInfoApp: [{
+      name: 'Más información sobre la aplicación en Euronews.',
+      url: 'https://es.euronews.com/2019/04/04/una-aplicacion-movil-para-detectar-senales-tempranas-de-parkinson'
+    }],
     name: 'Prognosis'
-  }, {
-    title: 'Ensayo piloto de una intervención de telerehabilitación para mejorar los resultados después de un accidente cerebrovascular en Ghana: un estudio de viabilidad y satisfacción del usuario',
-    summary: '<p>La telerrehabilitación después de un accidente cerebrovascular es prometedora para entornos de escasos recursos, especialmente en África subsahariana (ASS), con su inmensa carga de accidentes cerebrovasculares y sus servicios de fisioterapia gravemente limitados. </p><p>El objetivo fue evaluar preliminarmente la viabilidad y los resultados de los ejercicios de fisioterapia asistidos por tecnología móvil para sobrevivientes de accidentes cerebrovasculares en Ghana.</p>',
+  },
+  {
+    description: '<p>9zest Stroke Rehab es una App que brinda herramientas necesarias para la recuperación tras un accidente cerebrovascular,su objetivo principal es minimizar las posibilidades de recaída mediante una serie de ejercicios enfocados en la prevención y la recuperación. Ofrece una amplia variedad de ejercicios que ayudan a mejorar la capacidad para realizar actividades de la vida diaria, permite realizar una evaluación sencilla para crear un programa de terapia personalizado, incluye sesiones de entrenamiento audiovisuales fáciles de seguir con un vídeo de demostración para cada ejercicio.</p><p>Además, mide el progreso mediante pruebas que permiten rastrear las mejoras para un objetivo elegido, ofrece una variedad de ejercicios para mejorar el equilibrio, postura, movilidad y resistencia al caminar, ayuda a superar problemas del habla y la deglución mejora la capacidad de comunicación permite realizar tareas.</p>',
     technology: 'Software: 9zest Stroke App, IA',
     stage: [STAGES.IMPLEMENTATION],
-    usability: [USABILITY.THERAPIST, USABILITY.PATIENT],
+    usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'Gratuita Plan Básico, Requiere de suscripcion mensual compatibilidad con varios sistemas operativos  IOS y Android, Windows 10 Accesibles para personas con discapacidad auditiva y baja visión.',
     mode: 'Proporciona ejercicios asistidos,monitoreo, diseña un programa de fisioterapia personalizado para mejorar el equilibrio, la postura, la movilidad y la resistencia al caminar.',
-    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NEUROLOGICAL],
+    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NERVOUS_CENTRAL],
     barriers: 'Disponible en idioma ingles aplicación puede ser difícil de usar para personas con discapacidades cognitivas como la demencia o la afasia.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.jns.2018.01.039',
+    urls: [{
+      name: 'Ensayo piloto de una intervención de telerehabilitación para mejorar los resultados después de un accidente cerebrovascular en Ghana: un estudio de viabilidad y satisfacción del usuario',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.jns.2018.01.039'
+    }],
     image: '9zest-stroke-app.png',
+    linksInfoApp: [{
+      name: 'Más información sobre la aplicación en CNET.',
+      url: 'https://download.cnet.com/9zest-stroke-rehab/3000-2129_4-78426431.html?ex=RAMP-1939.2'
+    }],
     name: '9zest Stroke App'
-  }, {
-    title: 'Entrenamiento en resiliencia asistida por biorretroalimentación para el estrés traumático y operativo: análisis preliminar de una metodología de salud digital autodidacta',
-    summary: '<p>La resiliencia psicológica es fundamental para minimizar los efectos sobre la salud de eventos traumáticos. El trauma puede inducir un estado crónico de hiperexcitación, lo que resulta en problemas como ansiedad, insomnio o trastorno de estrés postraumático.</p><p>Las prácticas mente-cuerpo, como la respiración relajada y la meditación de atención plena, ayudan a reducir la excitación y pueden reducir la probabilidad de sufrir dicho malestar psicológico. Para comprender mejor las prácticas de desarrollo de resiliencia, estamos llevando a cabo el estudio Entrenamiento de resiliencia asistida por biorretroalimentación (BART) para evaluar si la práctica de respiración lenta y rítmica con o sin biorretroalimentación de variabilidad de la frecuencia cardíaca se puede aprender de manera efectiva a través de una aplicación de teléfono inteligente para mejorar la resiliencia psicológica. </p><p>Nuestro objetivo era realizar una revisión provisional limitada de las interacciones de los usuarios y estudiar datos sobre el uso de la aplicación de entrenamiento de resiliencia BART y demostrar análisis de datos de transmisión de sensores en tiempo real.</p>',
+  },
+  {
+    description: '<p>La aplicación BART proporciona entrenamiento de recuperación respiratoria progresiva con o sin biorretroalimentación de variabilidad de la frecuencia cardíaca a través de un protocolo de autocontrol, recibe datos en tiempo real de un sensor de frecuencia cardíaca conectado por Bluetooth y proporciona una biorretroalimentación de frecuencia cardíaca que muestra el movimiento durante situaciones más tranquila y estresantes.</p>',
     technology: 'software de inteligencia artificial',
     stage: ['investigación', STAGES.DEVELOPMENT],
-    usability: [USABILITY.USERS],
+    usability: [USABILITY.USERS, USABILITY.INVESTIGATORS],
     accessibility: 'No está disponible publicamente. Disponibilidad especifica bajo consentimiento informado. Se utiliza principalmente en estudios de investigación.',
     mode: 'La aplicación BART recibe datos en tiempo real desde un sensor de frecuencia cardíaca conectado por Bluetooth, brinda biorretroalimentación de variabilidad de la frecuencia cardíaca para indicar el movimiento entre estados más tranquilos.',
-    systemsCorporals: [SYSTEMS_CORPORALS.NERVOUS, SYSTEMS_CORPORALS.SENSORIAL, SYSTEMS_CORPORALS.NEUROMOTOR],
-    barriers: 'Tener acceso a dispositivos móviles compatibles, como teléfonos inteligentes o tabletas, para poder utilizar la aplicación y deben estar  familiarizados con su uso  para participar en el estudio. utlima actualizacion noviembre 8, 2019 Esta aplicación, disponible únicamente para los participantes del estudio. Las App puede ser difícil de usar para personas con discapacidades cognitivas como la demencia o la afasia o problemas de comunicación.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/12590',
+    systemsCorporals: [SYSTEMS_CORPORALS.SENSORIAL, SYSTEMS_CORPORALS.CARDIORESPIRATORY],
+    barriers: 'Tener acceso a dispositivos móviles compatibles, como teléfonos inteligentes o tabletas, para poder utilizar la aplicación y deben estar familiarizados con su uso  para participar en el estudio. Su ultima actualizacion fue en noviembre 8, 2019 Esta aplicación, disponible únicamente para los participantes del estudio. Las App puede ser difícil de usar para personas con discapacidades cognitivas como la demencia o la afasia o problemas de comunicación.',
+    urls: [{
+      name: 'Entrenamiento en resiliencia asistida por biorretroalimentación para el estrés traumático y operativo: análisis preliminar de una metodología de salud digital autodidacta.',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/12590'
+    }],
     image: 'bard.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Apkcombo.',
+      url: 'https://apkcombo.com/es/bart-biofeedback-assisted-resi/air.org.rti.phit.bart/download/apk#old-versions'
+    }, {
+      name: 'Más información en LDPlayer.',
+      url: 'https://www.ldplayer.net/home?n=18484125#utm_source=aff&utm_medium=aff&utm_campaign=aff18484125'
+    }],
     name: 'Bard'
-  }, {
-    title: 'Evaluación basada en aplicaciones del riesgo de caídas de las personas mayores mediante la aplicación mHealth Análisis de movilidad Lindera: estudio exploratorio',
-    summary: '<p>Las caídas y el riesgo de caer en personas mayores suponen un alto riesgo de pérdida de independencia. A medida que el riesgo de caída avanza con el tiempo, a menudo no se diagnostica adecuadamente debido a los largos intervalos entre los contactos con los profesionales sanitarios. Esto conlleva que el riesgo de caída no se detecte correctamente hasta la primera caída. </p><p>El software basado en aplicaciones capaz de evaluar los riesgos de caídas de los adultos mayores y monitorear el progreso y la presencia de factores de riesgo de caídas podría detectar un riesgo de caídas en desarrollo en una etapa temprana antes de la primera caída. A medida que los teléfonos inteligentes se vuelven más comunes entre la población de edad avanzada, este enfoque es fácilmente disponible y factible. </p><p>El objetivo del estudio es evaluar la aplicación Lindera Mobility Analysis (LIN). Los estándares de referencia determinaron el riesgo de caídas y validaron evaluaciones funcionales de movilidad.</p>',
+  },
+  {
+    description: '<p>Lindera Movility analysis identifica y rastrea con precisión los factores de riesgo de caída de cada persona a través del análisis de grabaciones de video de la caminata del paciente y un cuestionario digital,quienes requieren atención reciben información detallada sobre los parámetros de su caminata y los factores de riesgo de caídas identificados, junto con recomendaciones personalizadas para reducir el riesgo.</p>',
     technology: 'software de Inteligencia artificial',
     stage: [STAGES.IMPLEMENTATION],
-    usability: [USABILITY.THERAPIST, USABILITY.ESTUDENTS],
+    usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'Gratuita Plan Básico, require suscripción mensual- La aplicación está disponible en la App Store y en Google Play. Comaptible Sistemas IOS y Android',
     mode: 'esta app brinda seguimiento remoto donde se proporciona informacion del riesgo de caidas que tiene el usuario, analizando la marcha  a travez del algoritmo de inteligencia artificial incorporado en la aplicación.',
     systemsCorporals: [SYSTEMS_CORPORALS.NERVOUS, SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.CARDIOVASCULAR],
     barriers: 'Habilidades tecnológicas deficientes entre los usuarios mayores.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/36872',
+    urls: [{
+      name: 'Evaluación basada en aplicaciones del riesgo de caídas de las personas mayores mediante la aplicación mHealth Análisis de movilidad Lindera: estudio exploratorio.',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/36872'
+    }],
     image: 'lindera-mobility-analysis.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Play Store.',
+      url: 'https://play.google.com/store/apps/details?id=com.linderaredux&hl=en_US'
+    }],
     name: 'Lindera Mobility Analysis (lin)'
-  }, {
-    title: 'Evaluación de la aplicación digital de atención sanitaria “Nola” en pacientes con enfermedades musculoesqueléticas: un estudio piloto | Evaluación der digitalen Gesundheitsanwendung Nola bei Patienten mit muskuloskelettalen Beschwerdebildern: Eine Pilotstudie',
-    summary: '<p>Las enfermedades musculoesqueléticas (MSK) son la razón más común de problemas de salud. Las aplicaciones de salud digital (DiGA) pueden considerarse una opción de tratamiento eficaz y económica. Este estudio piloto tuvo como objetivo evaluar los efectos de un DiGA llamado Nola en diferentes medidas de resultados informados por el paciente (PROM) en pacientes con enfermedades MSK. </p><p><strong>Material y métodos:</strong> “Nola” es una aplicación que se puede utilizar como tratamiento fisioterapéutico independiente o complementario. Aquí, evaluamos la aplicación complementaria a la fisioterapia en 104 pacientes (60,6% mujeres, 47,9 ± 10,4 años, 24,5 ± 3,6 kg/m^2 ). Mediante una encuesta en línea, se examinaron los cambios en diferentes PROM clínicamente establecidas, así como los motivos y el uso de la aplicación por parte del usuario. Debido al carácter piloto, no se consideró ningún grupo control. </p><p><strong>Resultados:</strong> el 88,5% de los pacientes refirieron mejoras en la “intensidad del dolor”. Además, entre el 15,4% y el 57,7% de los pacientes mencionaron mejoras en otras PROM, como calidad de vida relacionada con la salud, nivel de actividad diaria y constructos psicológicos. Además, los pacientes declararon que no hubo deterioro mínimo en todas las PROM. </p><p>La aplicación podría impactar positivamente la intensidad del dolor y otros síntomas biopsicosociales en pacientes con enfermedades MSK. Dado que se ha informado de un deterioro mínimo o nulo en todas las PROM, es posible que se pueda considerar que la aplicación es segura de usar. Se requiere más investigación para evaluar la eficacia sostenible y los problemas de seguridad de la aplicación mediante ensayos controlados aleatorios.</p>',
+  },
+  {
+    description: '<p>Nola es una aplicación de salud digital que utiliza tecnología de digital para mejorar el tratamiento de enfermedades musculoesqueléticas (MSK),la aplicación funciona a través de software diseñado para proporcionar ejercicios y recomendaciones personalizadas a cada usuario, según sus necesidades específicas.</p>',
     technology: 'La aplicación Nola es un software de Inteligencia artificial',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.ESTUDENTS],
-    accessibility: 'Gratuita Plan Básico,requiere de suscrpcion mensua compatible en cualquier navegador moderno Accesibles para personas con discapacidad auditiva y baja visión',
+    accessibility: 'Gratuita Plan Básico, requiere de suscrpcion mensua compatible en cualquier navegador moderno Accesibles para personas con discapacidad auditiva y baja visión',
     mode: 'se utiliza como tratamiento fisioterapéutico independiente o adicional. Proporciona ejercicios y recomendaciones personalizadas para reducir el dolor y mejorar la fuerza y la movilidad en pacientes con enfermedades MSK.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
     barriers: 'Disponible solo en idioma aleman.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.orthtr.2022.12.001',
+    urls: [{
+      name: 'Evaluación de la aplicación digital de atención sanitaria "Nola" en pacientes con enfermedades musculoesqueléticas: un estudio piloto | Evaluación der digitalen Gesundheitsanwendung "Nola" bei Patienten mit muskuloskelettalen Beschwerdebildern: Eine Pilotstudie.',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.orthtr.2022.12.001'
+    }],
     image: 'nola.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Play Store.',
+      url: 'https://play.google.com/store/apps/details?id=com.myletics.nola&hl=es&gl=US'
+    }],
     name: 'Nola'
-  }, {
-    title: 'Evaluación de la viabilidad y aceptabilidad de ReWin-A, una innovación de rehabilitación terapéutica digital para personas con discapacidades relacionadas con accidentes cerebrovasculares en la India',
-    summary: '<p>El desarrollo de intervenciones escalables y culturalmente apropiadas para satisfacer las crecientes necesidades de rehabilitación del accidente cerebrovascular es un problema importante de salud pública. Por lo tanto, el desarrollo sistemático y la evaluación de una solución escalable, inclusiva e impulsada por la tecnología para la atención comunitaria del accidente cerebrovascular son de inmensa importancia para la salud pública en la India. </p><p>ReWin es una plataforma terapéutica digital que se desarrolló sistemáticamente. Este estudio tuvo como objetivo evaluar su viabilidad y aceptabilidad en un contexto indio. </p><p>Nuestros objetivos son: en la fase 1, poner a prueba la intervención para identificar problemas operativos y finalizar la intervención y, en la fase 2, evaluar la viabilidad y aceptabilidad de la intervención ReWin en un contexto indio.</p>',
+  },
+  {
+    description: '<p>ReWin es una plataforma de terapia digital diseñada para proporcionar rehabilitación a personas que han sufrido un accidente cerebrovascular,ofrece recursos terapéuticos en formato de video, evaluaciones terapéuticas y rehabilitación a través de la retroalimentación de sensores biométricos y realidad virtual.</p>',
     technology: 'Biorretroalimentacion y realidad virtual.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.ESTUDENTS],
@@ -155,41 +209,68 @@ export const applications: Application[] = [
     mode: 'La aplicación ReWin ofrece ejercicios asistidos por tecnologia, información terapéutica en formato de vídeo, evaluación terapéutica y rehabilitación a través de sensores de bio-retroalimentación y realidad virtual.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NEUROLOGICAL],
     barriers: 'la accesibilidad puede ser limitada para aquellos con discapacidades severas o problemas de comunicación. disponibilidad de contenido en un solo idioma. Requiere un dispositivo compatible, como un teléfono inteligente o una tableta,conexión de Bluetooth. ReWin puede ser costoso, tanto por la suscripción al servicio como por los dispositivos adicionales que pueden ser necesarios.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.3389/fneur.2022.936787',
+    urls: [{
+      name: 'Evaluación de la viabilidad y aceptabilidad de ReWin-A, una innovación de rehabilitación terapéutica digital para personas con discapacidades relacionadas con accidentes cerebrovasculares en la India.',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.3389/fneur.2022.936787'
+    }],
     image: 'rewin.png',
-    name: 'ReWin '
+    linksInfoApp: [{
+      name: 'Más información en Frontiersin.',
+      url: 'https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2022.936787/full'
+    }],
+    name: 'ReWin'
   },
   {
-    title: 'Intervención móvil de actividad física en el cáncer de mama: primeros hallazgos de un estudio de métodos mixtos de aceptabilidad y experiencia del usuario',
-    summary: '<p>la actividad física (AF) es el factor de estilo de vida mejor establecido asociado con la supervivencia del cáncer de mama (CM). Incluso las mujeres con BC avanzada pueden beneficiarse de una actividad física moderada. Sin embargo, la mayoría de los síntomas del CM y los efectos secundarios del tratamiento son barreras para la AP. </p><p>Los sistemas móviles de asesoramiento en salud pueden implementar funcionalidades y características basadas en teorías de cambio de comportamiento para promover comportamientos más saludables. Sin embargo, para aumentar su aceptabilidad entre las mujeres con CM, es fundamental que estos sistemas persuasivos digitales se diseñen considerando sus características, necesidades y preferencias contextuales. </p><p>Este estudio tuvo como objetivo examinar la posible aceptabilidad y viabilidad de una intervención móvil para promover la AF en pacientes con CM; evaluar la usabilidad y otros aspectos de la experiencia del usuario; e identificar consideraciones y aspectos clave para mejoras futuras, que pueden ayudar a aumentar y mantener la aceptabilidad y el compromiso.</p>',
-    technology: 'Inteligencia Artificial (IA), Internet de las cosas (IoT).',
-    stage: [STAGES.IMPLEMENTATION, STAGES.IMPLEMENTATION],
-    usability: [USABILITY.THERAPIST, USABILITY.PATIENT, USABILITY.USERS],
-    accessibility: 'Requiere un sistema operativo específico.',
+    description: '<p>La aplicación ofrece un monitoreo remoto a los pacientes mediante un sistema de mensajería segura, consta de una app móvil para el paciente y un portal web que permite al fisioterapeuta visualizar diariamente los datos del paciente, se intercambia información a través de la aplicación y la pulsera inteligente para obtener una mejor visión de su perfil, nivel de dolor, actividad física y expectativas, adherencia al ejercicio.</p><p>Los datos se recopilaron datos objetivos durante todo el proceso de recuperación mediante un rastreador de actividad comercial que los pacientes llevan puesto las 24 horas del día basándose en la retroalimentación diaria tanto objetiva como subjetiva del paciente, se realizaron ejercicios diariamente, evaluando la adherencia informada por el paciente para cada uno de ellos, permite realizar grabaciones videos del rango de movimiento de la rodilla semanalmente desde el día de la cirugía hasta dos meses después de la misma, así como tomar fotografías de la herida o la pierna para compartirlas a través de la aplicación, facilitando adaptar el plan de tratamiento sin necesidad de consultas físicas sistemáticas.</p>',
+    technology: 'Inteligencia Artificial.',
+    stage: [STAGES.IMPLEMENTATION],
+    usability: [USABILITY.THERAPIST, USABILITY.USERS],
+    accessibility: 'Requiere  de suscripcion premium. Compatible  para teléfonos inteligentes o tabletas iOS y Android). Restricciones para personas con afecciones del sistema nervioso central (Parkinson, esclerosis múltiple, accidente vascular cerebral) o trastorno psiquiátrico.',
     mode: 'La aplicacion ofrece una biblioteca de ejercicios predefinidos con instruciciones detalladas en video,adapta los ejercicios a las necesidades y capacidades, Brinda Monitoreo y  retroalimentación de la actividad en tiempo real, recopila datos  de seguimiento de la actividad física, monitoriza el progreso de las usuarias a distancia y ofrece apoyo y asesoramiento personalizado.',
-    systemsCorporals: [SYSTEMS_CORPORALS.CARDIOVASCULAR, SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.INMUNE, SYSTEMS_CORPORALS.ENDOCRINE],
-    barriers: 'Disponible en ingles.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/32354',
-    image: 'aplicacion-para-el-cancer.png',
-    name: 'Aplicación para el cancer'
+    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NERVOUS_CENTRAL],
+    barriers: 'Usuarios  con alteraciones cognitivas y con problemas de motricidad fina. Está disponible en ingles',
+    urls: [{
+      name: 'Rehabilitación digital después de una artroplastia de rodilla: un estudio de cohorte longitudinal prospectivo multicéntrico',
+      url: 'https://doi.org/10.3390/jpm13050824'
+    }],
+    image: 'moveup.webp',
+    linksInfoApp: [{
+      name: 'Más información en la página de MoveUp.',
+      url: 'https://www.moveup.care/appinfo'
+    }, {
+      name: 'Enlace de descarga en Play Store.',
+      url: 'https://play.google.com/store/apps/details?id=com.moveup.patient'
+    }, {
+      name: 'Enlace de descarga en App Store.',
+      url: 'https://apps.apple.com/be/app/moveup/id1437981269'
+    }],
+    name: 'MoveUp'
   },
   {
-    title: 'Investigando el uso de herramientas digitales de salud en fisioterapia: facilitadores y barreras',
-    summary: '<p>Las herramientas digitales son cada vez más comunes en la atención sanitaria. Se ha reconocido su potencial para mejorar el tratamiento, el seguimiento y el entrenamiento en fisioterapia. Sin embargo, los estudios informan que la adopción de herramientas de salud digitales en la fisioterapia ambulatoria es bastante baja y que su potencial está subexplotado. </p><p>Este artículo tiene como objetivo investigar cómo las herramientas de salud digitales en general, y la herramienta de salud móvil physitrack TM (en adelante, la aplicación), en particular, se utilizan en clínicas de fisioterapia ambulatoria y también identificar qué facilita o dificulta el uso de la aplicación.</p>',
+    description: '<p>Physitrack permite el fisioterapeuta hacer un seguimiento detallado de su progreso y intervenir si es necesario, así como informar de manera segura cuánto completó de un ejercicio determinado y si experimentó dolor.</p>',
     technology: 'software de inteligencia artificial y Realidad aumentada.',
     stage: [STAGES.MAINTENANCE],
-    usability: [USABILITY.THERAPIST, USABILITY.PATIENT, USABILITY.USERS],
-    accessibility: 'La aplicación está disponible para dispositivos iOS y Android.  Es gratuita para los pacientes, las clínicas de fisioterapia deben pagar una suscripción para poder utilizarla.',
-    mode: 'Ejercicios asistidos por tecnología,recopila datos y monitoriza el progreso del paciente,brinda educación en salud y retroalimentacion en tiempo real sobre la ejecucion de los ejercicios  ',
+    usability: [USABILITY.THERAPIST, USABILITY.USERS],
+    accessibility: 'La aplicación está disponible para dispositivos iOS y Android. Es gratuita para los pacientes, las clínicas de fisioterapia deben pagar una suscripción para poder utilizarla.',
+    mode: 'Ejercicios asistidos por tecnología, recopila datos y monitoriza el progreso del paciente,brinda educación en salud y retroalimentacion en tiempo real sobre la ejecucion de los ejercicios  ',
     systemsCorporals: [SYSTEMS_CORPORALS.CARDIOVASCULAR, SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NEUROLOGICAL],
     barriers: 'La aplicación no está disponible en todos los países. No tener las habilidades digitales necesarias para usar la aplicación.',
-    url: 'https://doi.org/10.1080/09593985.2022.2042439',
+    urls: [{
+      name: 'Investigando el uso de herramientas digitales de salud en fisioterapia: facilitadores y barreras.',
+      url: 'https://doi.org/10.1080/09593985.2022.2042439'
+    }],
     image: 'physitrack.png',
+    linksInfoApp: [{
+      name: 'Página web de Physitrack',
+      url: 'https://www.physitrack.com/es'
+    }, {
+      name: 'Más información en PhysiTrack.',
+      url: 'https://www.physitrack.com/es/features'
+    }],
     name: 'Physitrack'
   },
   {
-    title: 'La adherencia al entrenamiento de los músculos del suelo pélvico en casa mediante una aplicación de dispositivo móvil para mujeres con incontinencia urinaria: un ensayo controlado aleatorio',
-    summary: '<p>El objetivo de este estudio fue evaluar el uso de una aplicación de dispositivo móvil (app) para el tratamiento de la incontinencia urinaria mediante la adherencia al entrenamiento muscular del suelo pélvico (PFMT) en casa y su impacto en los síntomas urinarios.</p>',
+    description: '<p>Esta app permite a Los profesionales crear programas de entrenamiento personalizados con énfasis en contracciones rápidas o sostenidas, además ofrece estímulo visual a través de animaciones que guían al usuario sobre la posición del ejercicio (de pie, sentado o tumbado) y como guía del ejercicio, muestra cuándo el participante debe contraerse y sostenerse o contraerse y relajarse, además de la duración y el número de repeticiones, los ejercicios son acompañados con una melodía que contribuye a mantener el ritmo del entrenamiento, que se compone de ciclos, ritmos y cadencias, proporciona notificaciones en forma de recordatorios, pemite el registro del progreso, el programa también tiene la función de un diario de grabación. </p><p>Los datos se almacenan en la nube para que los profesionales sanitarios y los investigadores puedan seguir el proceso de rehabilitación del paciente,monitorear los momentos de mejora y adherencia de forma analítica. </p>',
     technology: 'aplicación móvil Diário Saúde, (diario de salud).',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.PATIENT],
@@ -197,83 +278,170 @@ export const applications: Application[] = [
     mode: 'La aplicación ofrece instrucciones y guías para realizar los ejercicios  recopila datos y monitoriza el progreso.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
     barriers: 'La App requiere un dispositivo móvil compatible. La aplicación está disponible solo en español y portugués.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1097/spv.0000000000000670',
+    urls: [{
+      name: 'La adherencia al entrenamiento de los músculos del suelo pélvico en casa mediante una aplicación de dispositivo móvil para mujeres con incontinencia urinaria: un ensayo controlado aleatorio',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1097/spv.0000000000000670'
+    }],
     image: 'diario-saude.png',
+    linksInfoApp: [{
+      name: 'Más información en la página de la UDES.',
+      url: 'https://journals-lww-com.ezproxy.udes.edu.co/fpmrs/pages/video.aspx?autoPlay=false&v=10'
+    }, {
+      url: 'https://www.inova.unicamp.br/2022/10/aplicativo-de-celular-auxilia-na-prevencao-e-tratamento-da-incontinencia-urinaria/',
+      name: 'Más información en la página de la INOVA.'
+    }],
     name: 'Diário Saúde'
   },
   {
-    title: 'La aplicación para teléfonos inteligentes con acelerómetro mejora la actividad física de los pacientes después de una cirugía ortopédica electiva: un estudio piloto',
-    summary: '<p>Los niveles bajos de actividad física (AF) son comunes en pacientes hospitalizados. Las herramientas de salud digitales podrían ser valiosas para prevenir los efectos negativos de la inactividad. Por eso desarrollamos Hospital Fit; que es una aplicación para teléfonos inteligentes con acelerómetro, diseñada para pacientes hospitalizados. Permite un seguimiento objetivo de la actividad y proporciona a los pacientes información sobre el progreso de su recuperación y ofrece un programa de ejercicios personalizado. </p><p>El objetivo de este estudio fue investigar el potencial de Hospital Fit para mejorar los niveles de AF y la recuperación funcional después de una cirugía ortopédica. La PA se midió con un acelerómetro desde el postoperatorio hasta el alta. El grupo de control recibió fisioterapia estándar, mientras que el grupo de intervención utilizó Hospital Fit además de fisioterapia. Se midió el tiempo dedicado a la recuperación activa y funcional (escala de nivel de asistencia de Iowa modificada) en el primer día posoperatorio (POD1). Se reclutaron noventa y siete pacientes sometidos a artroplastia total de rodilla o cadera. </p><p>El uso de Hospital Fit, corregido por edad, dio como resultado que los pacientes se pusieran de pie y caminaran en POD1 con un aumento promedio de 28,43 minutos (intervalo de confianza (IC) del 95 %: 5,55–51,32). Las probabilidades de lograr una recuperación funcional en POD1, corregidas según la clasificación de la Sociedad Estadounidense de Anestesiólogos, fueron 3,08 veces mayores (IC del 95 %: 1,14–8,31) con el uso de Hospital Fit. </p><p>Una aplicación para teléfono inteligente combinada con un acelerómetro demuestra el potencial de mejorar los niveles de PA y la recuperación funcional de los pacientes durante la hospitalización.</p>',
+    description: '<p>Hospital Fit es una aplicación móvil diseñada para pacientes hospitalizados que se conecta a un acelerómetro para teléfono inteligente, se conecta al monitor de actividad MOX a través de Bluetooth para recopilar datos de actividad física,el dispositivo contiene un sensor acelerómetro triaxial (ADXL362.</p><p>La aplicación proporciona datos sobre la cantidad de tiempo que los pacientes pasan de pie y caminando cada día, lo que permite un seguimiento preciso de su actividad. </p><p>La aplicación además, ofrece información sobre el progreso de la recuperación y brinda un programa de ejercicios personalizado con videos para ayudar en el proceso de rehabilitación.</p>',
     technology: 'software: Hospital Fit inteligencia Artificial (IA): Internet de las cosas (IoT)',
     stage: [STAGES.MAINTENANCE],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'La aplicación está disponible de forma gratuita para pacientes que se han sometido a una cirugía de reemplazo articular en el hospital piloto. compatible con una amplia gama de dispositivos móviles, incluidos teléfonos inteligentes y tabletas.  disponible para dispositivos Android e iOS.',
     mode: 'monitoriza el progreso, rastrea el tiempo que los pacientes pasan de pie, caminando y realizando otras actividades,registra paso,distancia y calorias quemadas, proporciona videos de ejercicios para ayudar a los pacientes a mejorar su fuerza, flexibilidad y rango de movimiento.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: '.  difícil de usar para personas con discapacidades como el deterioro cognitivo (delirio/demencia)  ultima actualizacion 21 de febrero de 2020 Requiere de conexion a Bluetooth para recopilar datos de actividad física y un sensor acelerómetro triaxial ',
-    url: 'https://doi.org/10.3390/s20154317',
+    barriers: 'La aplicación es difícil de usar para personas con discapacidades como el deterioro cognitivo (delirio/demencia)  ultima actualizacion 21 de febrero de 2020 Requiere de conexion a Bluetooth para recopilar datos de actividad física y un sensor acelerómetro triaxial ',
+    urls: [{
+      name: 'La aplicación para teléfonos inteligentes con acelerómetro mejora la actividad física de los pacientes después de una cirugía ortopédica electiva: un estudio piloto',
+      url: 'https://doi.org/10.3390/s20154317'
+    }],
     image: 'hospital-fit.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Play Store.',
+      url: 'https://play.google.com/store/apps/details?id=fitapp.fitapp'
+    }],
     name: 'Hospital Fit'
   },
   {
-    title: 'La realización de entrenamiento en circuito presencial y por telerehabilitación tiene beneficios y aceptabilidad similares en pacientes con osteoartritis de rodilla: un ensayo aleatorizado',
-    summary: '<p>¿El entrenamiento en circuito periodizado impartido a través de un modelo de atención de telerehabilitación es tan eficaz como el mismo entrenamiento aplicado cara a cara para mejorar la intensidad del dolor, la función física, la fuerza muscular, la catastrofización del dolor, la composición corporal, el tejido adiposo intermuscular y la arquitectura muscular en personas con rodilla? ¿Osteoartritis (OA)?</p>',
+    description: '<p>Telerehabilitación mediante grabaciones de video, seguidas de llamadas telefónicas periódicas para motivar e instruir a los participantes,Los participantes reciben acceso al protocolo del circuito a través de grabaciones de video entregadas a través de DVD, sitio web, canal de Youtube y/o vídeos a través de una aplicación móvil.</p>',
     technology: 'software: Telerehabilitación mediante grabaciones de video.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'Disponible en cualquier sistema operativo',
     mode: 'Ejercicios asistidos por tecnología,La aplicación proporciona instrucciones y retroalimentación sobre los ejercicios. El fisioterapeuta puede monitorear el progreso del paciente a través de la aplicación.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'Costo: La aplicación puede ser costosa para algunos usuarios.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.jphys.2023.08.014',
+    barriers: 'Traumatismos recientes, uso de infiltración de corticoides en rodillas en los últimos 6 meses. Limitada para usuarios con deterioro cognitivo. No es accesible para usuarios con su IMC  > 30.',
+    urls: [{
+      name: 'La realización de entrenamiento en circuito presencial y por telerehabilitación tiene beneficios y aceptabilidad similares en pacientes con osteoartritis de rodilla: un ensayo aleatorizado',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.jphys.2023.08.014'
+    }],
     image: 'telerehabilitacion.png',
+    linksInfoApp: [{
+      name: 'Canal de Youtube',
+      url: 'https://www.youtube.com/channel/UCy3hUVdqstyZCIC4ikAFOwQ'
+    }, {
+      name: 'Sitio web',
+      url: 'http://exercicio-joelho.trekeducation.org'
+    }],
     name: 'telerehabilitacion'
   },
   {
-    title: 'La terapia digital (DTx) amplia las opciones de tratamiento multimodal para el dolor lumbar crónico: el nexo entre la medicina de precisión, la educación del paciente y la salud pública',
-    summary: '<p>La terapéutica digital (DTx, software como dispositivo médico) proporciona tratamientos personalizados para enfermedades crónicas y amplía la medicina de precisión más allá de las farmacoterapias basadas en farmacogenómica. En este artículo de perspectiva, describimos cómo la DTx para el dolor lumbar crónico (CLBP) se puede integrar con medicamentos farmacéuticos (p. ej., AINE, opioides), fisioterapia (PT), terapia cognitivo-conductual (TCC) y empoderamiento del paciente. </p><p>Un ejemplo de DTx autorizado por la FDA para CLBP es RelieVRx, una aplicación de realidad virtual (VR) recetada que reduce la intensidad del dolor como tratamiento complementario para el dolor lumbar de moderado a intenso. </p><p>RelieVRx es un sistema de realidad virtual inmersivo que ofrece modalidades de manejo del dolor en el hogar, que incluyen relajación, autoconciencia, distracción del dolor, respiración guiada y educación del paciente. El mecanismo de acción de DTx está alineado con las recomendaciones del Colegio Americano de Médicos de utilizar modalidades no farmacológicas como terapia de primera línea para CLBP. </p><p>En este documento, analizamos cómo DTx puede proporcionar opciones de terapia multimodal que integran tratamientos convencionales con intervenciones adaptativas justo a tiempo (JITAI) que responden al exposoma. Dada la flexibilidad de las terapias basadas en software para adaptarse a diversos contenidos digitales, también sugerimos que la analgesia inducida por la música puede aumentar la eficacia clínica de las intervenciones digitales para el dolor crónico. </p><p>DTx ofrece oportunidades para abordar simultáneamente la crisis de dolor crónico y la epidemia de opioides y, al mismo tiempo, ayudar a los pacientes y proveedores de atención médica a mejorar los resultados de la terapia.</p>',
-    technology: 'RelieVRx-Es una aplicacion de Realidad virtual que es complementada por: Kaia Back Pain, BackRx ofrece ejercicios de yoga y Pilates para pacientes con CLPB discogénico y PainNavigator Inteligencia artificial',
+    description: '<p>RelieVRx es un sistema de realidad virtual prescrito para proporcionar terapia complementaria para el dolor lumbar crónico,sus sesiones diarias incluyen técnicas establecidas de terapia cognitivo-conductual, como conciencia corporal, distracción del dolor, relajación, autoconciencia, respiración guiada y educación del paciente,cada sesión se construye sobre la anterior, promoviendo la neuroplasticidad, es decir, la capacidad del cerebro para adaptarse y cambiar en respuesta a la experiencia,este programa es fácil de usar y ha demostrado generar una alta satisfacción entre los usuarios.</p>',
+    technology: 'RelieVRx - Realidad virtual',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
-    accessibility: 'El sistema RelieVRx puede ser costoso, tanto por el hardware como por la suscripción al software. KAIA: no gratis requiere suscripcion mensual. PainNavigator : plan basico,requiere de suscripcion mensual. La aplicación funciona en teléfonos inteligentes y tabletas con Android iOS. BackRx solo solo disponible para ordenadores Windows y Mac, no es compatible con dispositivos móviles como tabletas o teléfonos inteligentes.',
-    mode: 'El sistema RelieVRr brinda seguimiento del progreso y proporciona realidad virtual. Back Rx: proporciona videos guiados, seguimiento del dolor y el progreso, información educativa. Kaia Back Pain proporciona tecnologia de asistencia, retroalimentación automatizada del ejercicio en tiempo real, evaluación de la función objetiva y calentamientos gamificados.',
+    accessibility: 'El sistema RelieVRx puede ser costoso, tanto por el hardware como por la suscripción al software.',
+    mode: 'El sistema RelieVRr brinda seguimiento del progreso, proporciona realidad virtual.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'relieVRx requiere cierta familiaridad con la tecnología de realidad virtual y los teléfonos inteligentes. La suscripción de PainNavigator puede ser costosa para algunos usuarios. BackRx se requiere espacio suficiente para realizar los ejercicios de forma segura y cómoda. Kaia tiene falta de acceso a un teléfono inteligente o tableta compatible',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.3390/healthcare11101469',
+    barriers: 'relieVRx requiere cierta familiaridad con la tecnología de realidad virtual y los teléfonos inteligentes.',
+    urls: [{
+      name: 'La terapia digital (DTx) amplia las opciones de tratamiento multimodal para el dolor lumbar crónico: el nexo entre la medicina de precisión, la educación del paciente y la salud pública',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.3390/healthcare11101469'
+    }],
     image: 'relievrx.png',
-    name: 'RelieVRx y complementos'
+    linksInfoApp: [{
+      name: 'Sitio web',
+      url: 'https://www.relievrx.com/about'
+    }],
+    name: 'RelieVRx'
   },
   {
-    title: 'Los ejercicios guiados por retroalimentación realizados en la pantalla táctil de una tableta mejoran el regreso al trabajo, la función, la fuerza y ​​el uso de atención médica más que un programa de ejercicios prescrito en papel para personas con lesiones en la muñeca, la mano o los dedos: un ensayo aleatorio',
-    summary: '<p>En personas con lesiones de huesos y tejidos blandos de la muñeca, la mano y/o los dedos, ¿los ejercicios guiados por retroalimentación realizados en la pantalla táctil de una tableta aceleran el regreso al trabajo, reducen el uso de atención médica y mejoran la recuperación clínica más que un programa de ejercicios en el hogar prescrito en papel?</p>',
-    technology: 'software:La aplicación ReHand utiliza  Inteligencia artificial  ',
+    description: '<p>Es una aplicación diseñada específicamente para personas que sufren de dolor lumbar. Ofrece una variedad de recursos, que incluyen videos instructivos para aliviar el dolor, herramientas para rastrear el dolor y el progreso, contenido educativo y, de manera destacada, acceso a un grupo de pares que brindan apoyo mutuo.</p>',
+    technology: 'BackRx ofrece ejercicios de yoga y Pilates para pacientes con CLPB discogénico',
+    stage: [STAGES.IMPLEMENTATION],
+    usability: [USABILITY.USERS],
+    accessibility: 'BackRx solo está disponible para ordenadores Windows y Mac, el sistema BackRx no es compatible con dispositivos móviles como tabletas o teléfonos inteligentes.',
+    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
+    barriers: 'BackRx requiere espacio suficiente para realizar los ejercicios de forma segura y cómoda.',
+    urls: [{
+      name: 'BackRx, una aplicación de teléfono móvil personalizada para el dolor lumbar crónico discogénico: un estudio piloto prospectivo',
+      url: 'https://bmcmusculoskeletdisord.biomedcentral.com/articles/10.1186/s12891-022-05883-9'
+    }],
+    image: 'back-rx.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en la App Store',
+      url: 'https://apps.apple.com/us/app/back-rx/id1484288564'
+    }],
+    name: 'BackRx'
+  },
+  {
+    description: '<p>PainNavigator: Es un sistema digital diseñado para el manejo del dolor crónico, especialmente dirigido a aquellos que sufren de dolor lumbar crónico. Este programa se adapta al estilo de vida de cada usuario y aborda los diversos impactos físicos, psicológicos y sociales del dolor en el bienestar general. </p><p>Ofrece un curso completo de educación médica y estrategias de bienestar, diseñado para completarse en promedio en 8 semanas, así como ejercicios personalizados creados por un Doctor en Fisioterapia. Además, proporciona sesiones de yoga y atención plena dirigidas por un instructor certificado, diarios para gestionar el dolor de manera efectiva y acceso a un Entrenador de salud humano certificado disponible en todo momento.</p>',
+    technology: 'Software de inteligencia artificial.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
-    accessibility: 'La aplicación ReHand está disponible para dispositivos iOS y Android.  disponible en varios idiomas, incluyendo español. Gratuita Plan Básico,requiere de suscrpcion mensual ',
-    mode: 'Ejercicios asistidos por tecnología: La aplicación proporciona instrucciones y retroalimentación en tiempo real sobre la ejecución de los ejercicios,monitorea el progreso.',
+    accessibility: 'El plan basico requiere de suscripcion mensual. La aplicación funciona en teléfonos inteligentes y tabletas con Android iOS.',
+    mode: 'La aplicación crea un plan de ejercicios personalizado para cada usuario, brinda educacion y seguimiento del progreso motivación.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'problemas con la compatibilidad de las tabletas.  ',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.jphys.2020.09.012',
+    barriers: 'La suscripción puede ser costosa para algunos usuarios.',
+    urls: [{
+      name: 'PainNavigator Una evaluación de una aplicación móvil para el tratamiento del dolor lumbar crónico: estudio piloto prospectivo.',
+      url: 'https://pubmed.ncbi.nlm.nih.gov/36227637/'
+    }],
+    image: 'pain-navigator.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Google Play',
+      url: 'https://play.google.com/store/apps/details?id=com.PainNavigator'
+    }, {
+      name: 'Enlace de descarga en Apkpure',
+      url: 'https://apkpure.com/es/painnavigator/com.PainNavigator'
+    }],
+    name: 'PainNavigator'
+  },
+  {
+    description: '<p>ReHand es una herramienta diseñada para la prescripción y realización de programas de ejercicio terapéutico dirigidos a la rehabilitación de la muñeca, mano y dedos. Está destinada a pacientes con lesiones traumatológicas, ortopédicas o neurológicas en esta área, proporcionándoles un programa de ejercicios adaptado a su situación y etapa de recuperación. </p><p>Además, ofrece a los profesionales de la salud una herramienta para prescribir y monitorear el ejercicio terapéutico, se realizan mediante interacción táctil en una tablet,guiados por retroalimentación para facilitar el reentrenamiento funcional de la zona afectada. </p><p>Antes de cada ejercicio, se realiza un ajuste para garantizar que el paciente trabaje sin dolor y dentro de sus límites de movimiento,los ejercicios se adaptan y progresan según la evolución del paciente, manteniendo un nivel de desafío y atención adecuado. </p><p>Además, la aplicación incluye vídeos explicativos y proporciona instrucciones auditivas para cada ejercicio.</p>',
+    technology: 'La aplicación ReHand utiliza  Inteligencia artificial  ',
+    stage: [STAGES.IMPLEMENTATION],
+    usability: [USABILITY.THERAPIST, USABILITY.USERS],
+    accessibility: 'La aplicación ReHand está disponible para dispositivos iOS y Android. Está disponible en varios idiomas, incluyendo español. Gratuita Plan Básico, requiere de suscrpcion mensual.',
+    mode: 'Ejercicios asistidos por tecnología: La aplicación proporciona instrucciones y retroalimentación en tiempo real sobre la ejecución de los ejercicios,monitorea el progreso.',
+    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NEUROLOGICAL],
+    barriers: 'problemas con la compatibilidad de las tabletas.',
+    urls: [{
+      name: 'Los ejercicios guiados por retroalimentación realizados en la pantalla táctil de una tableta mejoran el regreso al trabajo, la función, la fuerza y ​​el uso de atención médica más que un programa de ejercicios prescrito en papel para personas con lesiones en la muñeca, la mano o los dedos: un ensayo aleatorio',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.jphys.2020.09.012'
+    }],
     image: 'rehand.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Google Play',
+      url: 'https://play.google.com/store/apps/details?id=com.healthinn.rehand&hl=es&gl=US'
+    }, {
+      name: 'Enlace de descarga en Apple Store',
+      url: 'https://apps.apple.com/es/app/rehand-rehabilitaci%C3%B3n-de-mano/id1188291271'
+    }],
     name: 'ReHand'
   },
   {
-    title: 'Mapeo de intervención de una aplicación de prescripción de terapias gamificadas para niños con discapacidades: enfoque de diseño centrado en el usuario',
-    summary: '<p>Las aplicaciones móviles de salud (mHealth) para niños están aumentando en disponibilidad y alcance. Las aplicaciones de prescripción de terapia (fisioterapia, patología del habla y terapia ocupacional) para mejorar el cumplimiento de los programas en el hogar o la escuela funcionan mejor cuando se desarrollan para ser muy atractivas para los niños y cuando incorporan técnicas de cambio de comportamiento (BCT) en su diseño. </p><p>El objetivo de este estudio fue describir el desarrollo de una aplicación de prescripción de terapia centrada en el usuario para niños (de 6 a 12 años de edad) con discapacidades del desarrollo neurológico (p. ej., parálisis cerebral, trastorno del espectro autista y discapacidad intelectual) que incorpora un mapeo de intervención ( IM) y diseño gamificado.</p>',
-    technology: 'Realidad Virtual. IA Gamificación',
-    stage: [STAGES.DEVELOPMENT],
-    usability: [USABILITY.THERAPIST],
-    accessibility: 'Disponible en cualquier sistema operativo. Limitación para niños con discapacidades intelectuales y físicas profundas aunque, si el padre decide usar Zingo para el niño (por ejemplo, mostrándole la pantalla pero presionando botones ), el niño aún puede encontrar la luz brillante. Los colores, la música, las imágenes digitales de mascotas y los vídeos de actividades son más atractivos que los programas de terapia convencionales en papel.',
-    mode: 'ejercicios asistidos  y retroalimentación inmediata sobre el éxito, retroalimentación continua sobre el progreso y establecimiento de objetivos',
-    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NEUROLOGICAL],
-    barriers: 'no usa un lenguaje claro y conciso, no ofrece tutoriales, guías y opciones de contacto para resolver dudas. Zingo no están diseñados para realizarse de forma completamente independiente. Requiere de la participación de un terapeuta para configurar el programa. Se  requieren suficientes habilidades motoras finas para tocar un solo botón.',
-    url: 'https://doi.org/10.2196/34588',
-    image: 'zingo.png',
-    name: 'zingo'
+    description: '<p>Es una plataforma intuitiva que simplifica el diseño, la prescripción y la implementación de ejercicios personalizados en un portal médico  accesible. A través de una aplicación móvil fácil de usar, los pacientes pueden medir y realizar un seguimiento digital de su rehabilitación vestibular, utilizando un sensor de cabeza innovador que se conecta sin complicaciones a sus teléfonos mediante Bluetooth. </p><p>Los fisioterapeutas cuentan con un portal dedicado para prescribir y desplegar ejercicios directamente en la aplicación del paciente, permitiendo un monitoreo continuo del progreso y la adaptación de las rutinas según sea necesario. </p><p>Además de proporcionar material educativo y lecturas, el sistema ofrece retroalimentación en tiempo real tanto para el paciente como para el médico, promoviendo una mejor comprensión del tratamiento y facilitando el seguimiento del avance. </p><p>El sensor de cabeza portátil, colocado discretamente detrás de la oreja, proporciona información instantánea sobre la ejecución de los ejercicios, permitiendo a los pacientes revisar y mejorar su técnica, mientras que brinda a los profesionales una visión detallada del progreso del paciente.</p>',
+    technology: 'Realidad Virtual',
+    stage: [STAGES.IMPLEMENTATION],
+    usability: [USABILITY.THERAPIST, USABILITY.USERS],
+    accessibility: 'Accesible para  usuarios con discapacidad visual y auditiva.',
+    mode: 'Proporciona información en tiempo real sobre la frecuencia de la cabeza prescrita y la real durante los ejercicios,ofrece registro de seguimiento de los síntomas y el progreso de su paciente, monitorea y guia a los pacientes de forma remota.',
+    systemsCorporals: [SYSTEMS_CORPORALS.VESTIBULAR],
+    barriers: 'Disponible en idioma ingles. Requiere conexión mediante Bluetooth a la aplicación del teléfono inteligente. Es costoso, tanto por la suscripción al servicio como por los dispositivos adicionales que pueden ser necesarios.',
+    urls: [{
+      name: 'Hacia una intervención de salud digital para la rehabilitación vestibular: usabilidad y resultados subjetivos de una plataforma novedosa',
+      url: 'https://doi.org/10.3389/fneur.2022.836796'
+    }],
+    image: 'vertigenius.png',
+    linksInfoApp: [{
+      name: 'Más información en la página de Vertigenius.',
+      url: 'https://www.vertigenius.com/'
+    }],
+    name: 'Vertigenius'
   },
   {
-    title: 'ParkProTrain: un programa de entrenamiento de fisioterapia individualizado basado en tabletas destinado a mejorar la calidad de vida y las restricciones de participación en pacientes con EP: un protocolo de estudio para un estudio multimétodo cuasi aleatorizado, longitudinal y secuencial',
-    summary: '<p>La enfermedad de Parkinson (EP) es una de las enfermedades neurodegenerativas más comunes. Los pacientes sufren una variedad de síntomas motores y no motores que afectan gravemente su vida diaria y su calidad de vida. En muchos casos, un tratamiento complejo de Parkinson (MKP) hospitalario de tres semanas de duración puede mejorar el estado general y la calidad de vida de los pacientes en poco tiempo. Sin embargo, en el sector ambulatorio a menudo faltan los recursos humanos y las estructuras necesarias para el tratamiento interdisciplinario de la enfermedad. </p><p>Para ayudar a los pacientes con EP a continuar con los ejercicios físicos que aprendieron en el MKP de forma regular, se desarrollará un programa de entrenamiento basado en tabletas en el que los ejercicios se pueden ajustar a las capacidades del paciente. </p><p>Se espera que este programa aumente la calidad de vida y la participación social, además de retrasar la progresión del deterioro.</p>',
+    description: '<p>La aplicación ofrece una variedad de videos con instrucciones verbales y explicaciones para ejercicios de activación física específicos para personas con Parkinson, estos ejercicios incluyen resistencia, fuerza y equilibrio, están disponibles en diferentes niveles de dificultad, además la aplicación ofrece actividades como marcha nórdica, Tai Chi y baile.</p><p>Los usuarios pueden programar su programa de entrenamiento personalizado en  un calendario integrado, y recibirán recordatorios auditivos y/o notificaciones para realizar sus ejercicios programados, los videos proporcionan apoyo visual para una ejecución correcta de los ejercicios, y al completar una sesión, los usuarios registran su progreso y cualquier dificultad experimentada, así como su nivel de bienestar, esfuerzo y diversión, Los datos recopilados se transfieren automáticamente a un panel de administración en la clínica, donde el fisioterapeuta supervisor puede monitorear la adherencia del paciente y ajustar el programa de entrenamiento según sea necesario, La aplicación utiliza la red móvil para transmitir datos a intervalos regulares, permitiendo así que el fisioterapeuta proporcione comentarios y correcciones de forma remota. Esto es especialmente importante debido a las pequeñas amplitudes de movimiento que los pacientes con Parkinson pueden experimentar durante el ejercicio, que pueden necesitar correcciones regulares</p>',
     technology: 'Inteligencia Artificial (IA): Realidad Virtual (RV): ',
     stage: [STAGES.DEVELOPMENT],
     usability: [USABILITY.USERS],
@@ -281,209 +449,294 @@ export const applications: Application[] = [
     mode: 'El programa ofrece una variedad de ejercicios para ayudar a mejorar la movilidad, el equilibrio y la coordinación. La aplicación proporciona retroalimentación en tiempo real  permite a los pacientes realizar un seguimiento de su progreso con el tiempo.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NERVOUS, SYSTEMS_CORPORALS.CARDIOVASCULAR],
     barriers: 'Acceso a tablets o equipos que tengan la capacidad para el uso de la app.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1186/s12883-019-1355-x',
+    urls: [{
+      name: 'ParkProTrain: un programa de entrenamiento de fisioterapia individualizado basado en tabletas destinado a mejorar la calidad de vida y las restricciones de participación en pacientes con EP: un protocolo de estudio para un estudio multimétodo cuasi aleatorizado, longitudinal y secuencial',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1186/s12883-019-1355-x'
+    }],
     image: 'parkprotrain.png',
+    linksInfoApp: [{
+      name: 'Más información del artículo en la página de la UDES',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1186/s12883-019-1355-x'
+    }],
     name: 'ParkProTrain'
   },
   {
-    title: 'Percepciones de los pacientes sobre la monitorización remota y los programas de rehabilitación basados ​​en aplicaciones: una comparación de la artroplastia total de cadera y rodilla',
-    summary: '<p>Los programas de rehabilitación con monitorización remota son nuevas tecnologías que están ganando popularidad para los pacientes sometidos a artroplastia total de las articulaciones de las extremidades inferiores. El propósito de este estudio fue evaluar las percepciones de los pacientes sobre estas tecnologías.</p> <p><strong>Métodos:</strong> Los Pacientes que se sometieron a artroplastia total de cadera (THA), artroplastia total de rodilla (TKA) y artroplastia unicompartimental de rodilla (UKA) desde septiembre de 2020 hasta febrero de 2022, y participaron en un estudio clínico que utilizó monitorización remota y un programa de rehabilitación basado en aplicaciones. recibieron un cuestionario 3 meses después de la operación para evaluar sus percepciones sobre estas tecnologías. Hubo 166 pacientes que completaron la encuesta (42 THA; 106 TKA; 18 UKA)</p>. <p><strong>Resultados:</strong> El 92% de los pacientes encontraron la tecnología fácil de usar. La mayoría de los pacientes sintieron que las tecnologías los motivaban. Los pacientes con ATR/AUK sintieron más claramente que estas tecnologías permitieron al cirujano monitorear de cerca su recuperación (81,9% versus 65,9%; P = 0,009). El 85% de los pacientes con ATC y el 94,5% de los pacientes con ATR/AUK recomendaron estas tecnologías. Los pacientes con THA sintieron con mayor firmeza que la rehabilitación digital podría reemplazar completamente la fisioterapia presencial en comparación con los pacientes con TKA/UKA (85,4 % versus 41,3 %; P < 0,001). La mayoría (83%) de los pacientes recomendó una combinación de rehabilitación hospitalaria y asistida por tecnología (THA 90,2%; 84,4% TKA/UKA)</p>. <p><strong>Conclusión:</strong> Los pacientes con THA y TKA/UKA encontraron que la rehabilitación con monitorización remota era fácil de usar, aumentó la motivación y la recomendaron a otros pacientes sometidos a artroplastia de las extremidades inferiores. Recomiendan una combinación de tecnología y rehabilitación en persona después de la operación. Los pacientes de THA sintieron que estas tecnologías podrían reemplazar los programas de rehabilitación en persona. Nivel de evidencia: IV. © 2023</p>',
-    technology: 'software (MyMobility, Zimmer Biomet para el teléfono inteligente proporcionado por el paciente Inteligencia artificial (IA):  Realidad virtual (RV):  Internet de las cosas (IoT)',
+    description: '<p>My mobility y Apple Watch se unen para ofrecer una solución completa que respalda tanto la preparación prequirúrgica como la recuperación de los pacientes mediante la supervisión remota y la recolección de datos clínicos, esta plataforma digital proporciona apoyo continuo y orientación a los pacientes, garantizando una experiencia conectada,brinda  información en tiempo real y retroalimentación valiosa de los pacientes para mejorar la atención, los resultados y la satisfacción durante todo el proceso, desde la preparación hasta la recuperación quirúrgica.</p><p> Esta aplicación ofrece recursos educativos accesibles, respuestas a preguntas frecuentes y ejercicios adaptados a cada paciente mediante alertas como las excepciones de marcha, detecta posibles problemas en la recuperación y permite ajustar el plan de atención según sea necesario,facilita tanto a los pacientes como a los equipos de atención realizar un seguimiento efectivo de la recuperación, enfocándose en actividades específicas como caminar y estableciendo metas alcanzables basadas en datos comparativos con otros pacientes en situaciones similares.</p>',
+    technology: 'software de Inteligencia artificial (IA),  Realidad virtual (RV) e internet de las cosas (IoT)',
     stage: [STAGES.IMPLEMENTATION],
-    usability: [USABILITY.USERS],
+    usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'Requiere suscripcion mensual ',
-    mode: 'proporciona informacion del paciente mediante el seguimiento del progreso centrandose en actividades como sesiones de caminata y pasos, monitoreo  remoto, y recopilación de la informacion de la velocidad de la marcha,educacion sobre procedimientos amigable para el paciente, respuestas a preguntas frecuentes y ejercicios basados ​​en un protocolo de tratamiento individual. ',
+    mode: 'proporciona informacion del paciente mediante el seguimiento del progreso centrandose en actividades como sesiones de caminata y pasos, monitoreo  remoto, y recopilación de la información de la velocidad de la marcha, educación sobre procedimientos amigable para el paciente, respuestas a preguntas frecuentes y ejercicios basados ​​en un protocolo de tratamiento individual. ',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NEUROLOGICAL, SYSTEMS_CORPORALS.CARDIOVASCULAR],
     barriers: 'Acceso: la tecnología de rehabilitación no está disponibles en todas las áreas. Requiere de conexión a conexión  de Bluetooth.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.arth.2023.04.032',
+    urls: [{
+      name: 'Percepciones de los pacientes sobre la monitorización remota y los programas de rehabilitación basados ​​en aplicaciones: una comparación de la artroplastia total de cadera y rodilla.',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.arth.2023.04.032'
+    }],
     image: 'mymobility.png',
+    linksInfoApp: [{
+      name: 'Más información en Zimmerbiomet',
+      url: 'https://www.zimmerbiomet.com/en/products-and-solutions/zb-edge/mymobility.html#02-value'
+    }],
     name: 'MyMobility, Zimmer Biomet'
   },
   {
-    title: 'Precisión de una aplicación de software para teléfonos inteligentes en comparación con un goniómetro portátil para medir el rango de movimiento del hombro en adultos asintomáticos',
-    summary: '<p>Por lo general, las mediciones del rango de movimiento (ROM) del hombro se realizan en un entorno clínico, donde los médicos, fisioterapeutas (PT) y terapeutas ocupacionales utilizan un goniómetro.</p> <p>El objetivo del articulo es determinar la precisión de una aplicación de software ROM (aplicación) basada en un teléfono inteligente para evaluar el ROM activo del hombro y comparar las mediciones con la goniometría tradicional medida por un fisioterapeuta.</p>',
-    technology: 'IA (Inteligencia Artificial) Realidad Aumentada Software',
+    description: '<p>Esta aplicación proporciona un seguimiento detallado y la capacidad de medir el rango de movimiento, además de ofrecer ejercicios simples para realizar sin dolor tanto en el trabajo como en el hogar. También incluye actividades de mindfulness diseñadas para ayudar a manejar el estrés, la ansiedad y el dolor, ofrece información oportuna y relevante sobre la recuperación del usuario, así como seguimiento del progreso mediante evaluaciones clínicamente validadas. Además, cuenta con una función de medición de movimiento inteligente denominada SMART Motion.</p>',
+    technology: 'IA y Realidad Aumentada.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.USERS],
-    accessibility: 'Disponible para Android e iOS Limitada a usuarios con smartphone compatible Plan basico ,requiere de suscrpcion mensual',
-    mode: 'Ejercicios asistidos por tecnología Monitoreo remoto de la rehabilitación',
+    accessibility: 'Disponible para Android e iOS Limitada a usuarios con smartphone compatible Plan basico pero requiere de suscripción mensual',
+    mode: 'Ejercicios asistidos por tecnología y monitoreo remoto de la rehabilitación',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'Requiere de un smartphone compatible La precisión de la IA y la Realidad Aumentada puede variar. Paga, con diferentes planes disponibles Requiere de un exoesqueleto ReWalk Limitada a usuarios con paraplejia o tetraplejia',
-    url: 'https://journals.sagepub.com/doi/10.1177/23259671231187297',
+    barriers: 'Limitada a usuarios con paraplejia o tetraplejia. Requiere capacitación del paciente para utilizar con precisión la herramienta.',
+    urls: [{
+      name: 'Precisión de una aplicación de software para teléfonos inteligentes en comparación con un goniómetro portátil para medir el rango de movimiento del hombro en adultos asintomáticos.',
+      url: 'https://journals.sagepub.com/doi/10.1177/23259671231187297'
+    }],
     image: 'bardavon.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Play Store',
+      url: 'https://play.google.com/store/apps/details?id=com.peerwell'
+    }],
     name: 'Bardavon Recovery PeerWell, Inc.'
   },
   {
-    title: 'Premio Chitranjan S. Ranawat: El uso de torniquetes no afecta la trayectoria de la recuperación temprana de la artroplastia total de rodilla: un ensayo controlado, aleatorizado y prospectivo',
-    summary: '<p>El impacto del uso de torniquetes en la recuperación después de una artroplastia total de rodilla (ATR) sigue siendo controvertido. El propósito de este ensayo controlado aleatorio, prospectivo, simple ciego fue investigar el efecto del uso de torniquetes en la recuperación temprana después de una ATR utilizando una plataforma de participación del paciente (PEP) basada en una aplicación para teléfonos inteligentes con un monitor de actividad en la muñeca para obtener datos más sólidos sobre recuperación temprana.</p> <p><strong>Métodos:</strong> Se inscribieron 107 pacientes sometidos a ATR primaria por osteoartritis (54 con torniquete [TQ+]; 53 sin torniquete [TQ-]). Todos los pacientes utilizaron una PEP y un sensor de actividad en la muñeca durante 2 semanas antes de la operación y 90 días después de la operación para recopilar puntuaciones de dolor en la escala visual analógica (EVA) y consumo de opioides, así como la puntuación de rodilla Oxford (OKS) semanal y la puntuación de articulaciones olvidadas (FJS) mensual. ). No hubo diferencias en la demografía entre los grupos. Se realizaron evaluaciones formales de fisioterapia antes de la operación y 3 meses después de la operación. Se utilizaron pruebas t de muestras independientes para datos continuos y pruebas de Chi-cuadrado y exacta de Fisher para datos discretos.</p> <p><strong>Resultados:</strong> El uso de torniquetes no tuvo un impacto estadísticamente significativo en el dolor EVA diario ni en el consumo de opioides durante los primeros 30 días posoperatorios (P > 0,05). El uso de torniquetes no tuvo un impacto significativo en OKS o FJS a los 30 o 90 días después de la operación (P > 0,05), ni en la realización de pruebas formales de fisioterapia a los 3 meses después de la operación (P > 0,05).</p> <p><strong>Conclusión:</strong> Al utilizar una tecnología digital para recopilar datos diarios de los pacientes, encontramos que el uso de torniquetes no tiene un impacto negativo clínicamente significativo sobre el dolor y la función en los primeros 90 días después de la ATR primaria.</p>',
-    technology: 'El software FocusMotion FitBit Inspire HR maneja una inteligencia artificial',
+    description: '<p>FocusMotion es una tecnología de recuperación ortopédica innovadora,se  centra en capturar la actividad física y los movimientos de los pacientes de manera precisa, utilizando una combinación de una rodillera inteligente y una aplicación móvil, esta tecnología se integra con dispositivos como relojes inteligentes y pulseras de actividad física, permite realizar un seguimiento exhaustivo de los ejercicios anaeróbicos, así como de otros movimientos del usuario.<p></p>La aplicación aprovecha diversas funcionalidades del dispositivo, como el giroscopio, el acelerómetro, el magnetómetro y la electromiografía, para registrar y comprender los movimientos y el ritmo del usuario de manera automatizada. Este enfoque ofrece a los terapeutas una herramienta poderosa para monitorear la actividad física de sus pacientes de manera más precisa y eficiente.</p>',
+    technology: 'Maneja una inteligencia artificial',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'Gratis para dispositivos móviles Android e iOS. Requiere un smartphone o tablet compatible con RA.',
-    mode: 'Ejercicios asistidos por tecnología, Monitoreo remoto,seguimiento del progreso proporciona evaluaciones y recomendaciones personalizadas.',
+    mode: 'Esta tecnología ofrece entrenamientos respaldados por la última tecnología, seguimiento detallado del progreso y una recolección precisa de datos de movimiento,proporciona retroalimentación instantánea en tiempo real, registra el movimiento y supervisa ejercicios como estiramientos y tareas de movilidad, incluida la prueba de cronometraje,sigue de cerca la progresión del rango de movimiento en cada repetición realizados por el paciente.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NEUROLOGICAL],
     barriers: 'Require de un teléfono inteligente capaz de ejecutar la plataforma de participación del paciente y el monitor de actividad portátil Es costoso, tanto por la suscripción al servicio como por los dispositivos adicionales que pueden ser necesarios.',
-    url: 'https://doi.org/10.1016/j.arth.2023.03.081',
+    urls: [{
+      name: 'Premio Chitranjan S. Ranawat: El uso de torniquetes no afecta la trayectoria de la recuperación temprana de la artroplastia total de rodilla: un ensayo controlado, aleatorizado y prospectivo.',
+      url: 'https://doi.org/10.1016/j.arth.2023.03.081'
+    }],
     image: 'focusmotion-health.png',
+    linksInfoApp: [{
+      name: 'Más información en la página de FocusMotion.',
+      url: 'https://www.focusmotion.io/'
+    }],
     name: 'FocusMotion Health'
   },
   {
-    title: 'Programa de rehabilitación basado en aplicaciones después de una artroplastia total de rodilla: un ensayo controlado aleatorio',
-    summary: '<p>Se han desarrollado nuevos programas basados ​​en aplicaciones para la rehabilitación posoperatoria, pero hasta la fecha no se ha publicado ningún estudio a largo plazo. Por lo tanto, se realizó un ensayo de control aleatorio prospectivo con un seguimiento de 2 años para evaluar la efectividad de la rehabilitación basada en aplicaciones (GenuSport) en comparación con un grupo de control después de una artroplastia total de rodilla (ATR).</p>',
-    technology: 'software: app llamada GenuSport contiene 3 sensores que se colocanen rodiilla. Realidad aumentada',
+    description: '<p>El programa  consiste en un dispositivo de entrenamiento para la rodilla y una aplicación llamada GenuSport, el  dispositivo incluye tres sensores de presión que se colocan en la parte posterior de la rodilla, diseñados para la rehabilitación después de lesiones o cirugías de rodilla, puede utilizarse inmediatamente después de la lesión, antes de una posible cirugía, o directamente después de esta, su enfoque se centra en fomentar un entrenamiento responsable, proporcionar retroalimentación en tiempo real y mejorar la fuerza, flexibilidad y control de la rodilla, el entrenamiento de rehabilitación se divide en dos modos principales, en el primero, denominado"golpe alto", el paciente debe presionar la rodilla contra el sensor durante 5 segundos para alcanzar una fuerza objetivo establecida por la aplicación. <p></p>En el segundo modo, llamado "simulador de vuelo", el objetivo es mantener la rodilla en el aire durante 100 segundos, al final de cada sesión de entrenamiento, los pacientes pueden revisar su desempeño, también tienen la opción de comparar el progreso entre ambas rodillas, cada sesión de entrenamiento tiene una duración aproximada de 5 minutos.</p>',
+    technology: 'Contiene 3 sensores que se colocan en la rodilla. Además tiene realidad aumentada',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'La aplicación está disponible de forma gratuita para dispositivos iOS y Android. Los pacientes deben tener un teléfono inteligente o tableta compatible con la aplicación.',
     mode: 'proporciona a los usuarios ejercicios de recuperación diarios y los guía a través de la rutina, brindándoles comentarios en tiempo real,monitorización de rehabilitación del espectro de velocidades,monitorea ejercicios de estiramiento y tareas de movilidad, como la prueba de cronometrado y listo. monitorea la progresión del rango de movimiento en cada repetición de cada conjunto de movimientos.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
     barriers: 'dificultades para usar la aplicación debido a su falta de familiaridad con la tecnología. Aunque la aplicación es gratuita, los pacientes pueden tener que pagar por el monitor de actividad.',
-    url: 'https://doi.org/10.1007/s00402-021-03789-0',
+    urls: [{
+      name: 'Programa de rehabilitación basado en aplicaciones después de una artroplastia total de rodilla: un ensayo controlado aleatorio.',
+      url: 'https://doi.org/10.1007/s00402-021-03789-0'
+    }],
     image: 'genu-sport.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Play Store',
+      url: 'https://play.google.com/store/apps/details?id=de.genusport.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+    }],
     name: 'GenuSport'
   },
   {
-    title: 'Programa de telerehabilitación para adultos mayores en lista de espera para fisioterapia después del alta hospitalaria: protocolo de estudio para un protocolo pragmático de ensayo aleatorio',
-    summary: '<p>Los retrasos en el inicio de la fisioterapia después del alta hospitalaria empeoran la falta de condición física en los adultos mayores. Intervenir rápidamente puede minimizar los efectos negativos del descondicionamiento. La telerehabilitación es una estrategia que aumenta el acceso a la rehabilitación, mejora los resultados clínicos y reduce los costos.</p><p>Este artículo presenta el protocolo para un ensayo clínico pragmático que tiene como objetivo determinar la efectividad y costo-efectividad de una intervención multicomponente ofrecida por telerehabilitación para adultos mayores dados de alta en espera de fisioterapia por cualquier condición médica específica.</p>',
-    technology: 'Sofware  Inteligencia artificial ',
+    description: '<p>El programa se centra en ejercicios que abarcan desde entrenamiento de resistencia de los principales grupos musculares de las extremidades hasta ejercicios de equilibrio,cada ejercicio tiene tres niveles de dificultad y cuatro subniveles de progresión,se realiza de tres a cinco veces por semana con alta intensidad, con tres series de repeticiones personalizadas según la calificación Borg modificada del esfuerzo percibido en las repeticiones finales, los participantes elegirán una actividad diaria desafiante para mejorar a corto plazo, los ejercicios se llevan a cabo siempre en presencia de un acompañante o cuidador y serán seguidos mediante llamadas telefónicas semanales y reuniones mensuales cara a cara, el nivel de dificultad de los ejercicios progresarán mensualmente y los subniveles de dificultad progresarán semanalmente, según corresponda.</p>',
+    technology: 'Sofware Inteligencia artificial y telereabilitacion',
     stage: [STAGES.DEVELOPMENT],
     usability: [USABILITY.USERS],
     accessibility: 'La aplicación estará disponible para adultos mayores que esperan fisioterapia ambulatoria en el sistema público de salud. Disponible para dispositivos Android e iOS. Requisitos: Se requiere un teléfono inteligente con cámara y acceso a internet. La app será gratuita para los participantes del estudio.',
     mode: 'Ejercicios asistidos por tecnología: La aplicación proporcionará instrucciones visuales y auditivas para realizar los ejercicios. Monitoreo remoto de la rehabilitación: Los fisioterapeutas monitorearán el progreso de los participantes a través de llamadas telefónicas y videoconferencias.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
     barriers: 'disponer de un dispositivo smartphone con acceso a Internet  Dificultades para usar la tecnología. Falta de motivación para realizar los ejercicios. No es accesible para personas con limitaciones  moviilidad  exclusion:pacientes con enfermedad neurológica, como Parkinson o accidente cerebrovascular.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1186/s13063-021-05387-2',
+    urls: [{
+      name: 'Programa de telerehabilitación para adultos mayores en lista de espera para fisioterapia después del alta hospitalaria: protocolo de estudio para un protocolo pragmático de ensayo aleatorio',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1186/s13063-021-05387-2'
+    }],
     image: 'exercise-protocol.png',
+    linksInfoApp: [{
+      name: 'Más información en la página de Trials Journal',
+      url: 'https://trialsjournal-biomedcentral-com.ezproxy.udes.edu.co/articles/10.1186/s13063-021-05387-2#Tab1'
+    }],
     name: 'exercise protocol'
   },
   {
-    title: 'Tratamiento multidisciplinario del dolor de espalda basado en aplicaciones versus fisioterapia combinada más educación en línea: un ensayo controlado aleatorio',
-    summary: '<p>El dolor lumbar (lumbalgia) inespecífico es una de las principales causas de discapacidad global. Los programas multidisciplinarios de tratamiento del dolor (MPT) que comprenden intervenciones educativas, físicas y psicológicas han mostrado efectos positivos del tratamiento sobre el dolor lumbar. Sin embargo, estos programas son costosos y las oportunidades de tratamiento a menudo se limitan a centros médicos especializados. </p><p>La salud móvil y otras intervenciones digitales pueden ser un método prometedor para apoyar con éxito el autocuidado del paciente con dolor lumbar. Para abordar estos problemas, investigamos los efectos clínicos de una aplicación multidisciplinaria mHealth para el dolor de espalda (aplicación Kaia) en un ensayo controlado aleatorio (registrado en el Registro Alemán de Ensayos Clínicos con el número DRKS00016329). </p><p>Ciento un pacientes adultos con dolor lumbar inespecífico de 6 semanas a 1 año fueron asignados aleatoriamente a un grupo de intervención o a un grupo de control. En el grupo de intervención, se proporcionó la aplicación Kaia durante 3 meses. El tratamiento de control consistió en seis sesiones de fisioterapia individuales durante 6 semanas y educación en línea de alta calidad. </p><p>El resultado primario, la intensidad del dolor, se evaluó a las 12 semanas de seguimiento en una escala de calificación numérica (NRS) de 11 puntos. Nuestro análisis por protocolo no mostró diferencias significativas entre los grupos al inicio del estudio (grupo Kaia App: M = 5,10 (DE = 1,07) versus grupo control: M = 5,41 (DE = 1,15). A las 12 semanas de seguimiento, Kaia El grupo de la aplicación informó una intensidad del dolor significativamente menor ( M = 2,70 (DE = 1,51)) en comparación con el grupo de control ( M = 3,40 (DE = 1,63)). </p><p>Nuestros resultados indican que la aplicación Kaia como aplicación multidisciplinaria para el dolor de espalda es un tratamiento eficaz. en pacientes con dolor lumbar y es superior a la fisioterapia en combinación con educación en línea.</p>',
-    technology: 'EL software kaia Inteligencia artificial (IA) Realidad virtual (RV) Internet de las cosas (IoT)',
+    description: '<p>La aplicación ofrece un enfoque completo, científico y fácil de usar para abordar el dolor de espalda,proporciona una guía paso a paso que incluye ejercicios terapéuticos y contenido educativo, está diseñada para personas diagnosticadas con dolor de espalda que no han encontrado alivio con otros tratamientos,personaliza los ejercicios según el nivel de condición física y el dolor del usuario mediante algoritmos inteligentes,evalúa la ubicación, intensidad del dolor y nivel de condición física para crear un plan de entrenamiento adaptado,los ejercicios se ajustan continuamente según la retroalimentación del usuario,los videos de alta calidad aseguran la correcta ejecución de los ejercicios. </p><p>Kaia motiva al usuario para alcanzar sus objetivos de entrenamiento personales y realiza un seguimiento del progreso,frece una variedad de ejercicios, desde fortalecimiento muscular hasta técnicas de relajación, junto con conocimientos sobre el dolor y consejos para manejarlo.</p>',
+    technology: 'Inteligencia artificial, realidad virtual e Internet de las cosas.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'No gratuita, prueba gratuita por 7 dias. Disponible para iOS y Android Requiere un teléfono inteligente o tableta compatible.',
-    mode: 'Ejercicios asistidos por tecnología Monitoreo remoto de la rehabilitación.',
+    mode: 'Ejercicios asistidos por tecnología, monitoreo remoto de la rehabilitación, brinda educacion en salud Y Seguimiento del proceso.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'Falta de acceso a un teléfono inteligente o tableta compatible, falta de conocimientos técnicos, dificultades con la interfaz de usuario Costos de datos móviles dominar el idioma alemán.',
-    url: 'https://doi.org/10.1038/s41746-019-0109-x',
+    barriers: 'Falta de acceso a un teléfono inteligente o tableta compatible, falta de conocimientos técnicos, dificultades con la interfaz de usuario, costos de datos móviles, dominar el idioma alemán, no disponible en español.',
+    urls: [{
+      name: 'Tratamiento multidisciplinario del dolor de espalda basado en aplicaciones versus fisioterapia combinada más educación en línea: un ensayo controlado aleatorio',
+      url: 'https://doi.org/10.1038/s41746-019-0109-x'
+    }, {
+      name: 'Uso de la vigilancia poscomercialización para evaluar eventos relacionados con la seguridad en una aplicación de rehabilitación digital (aplicación Kaia): estudio observacional',
+      url: 'https://doi.org/10.2196/25453'
+    }],
     image: 'kaia.png',
-    name: 'kaia'
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Play Store.',
+      url: 'https://play.google.com/store/apps/details?id=com.kaiahealth.app'
+    }, {
+      name: 'Enlace de descarga en App Store.',
+      url: 'https://apps.apple.com/us/app/kaia-health/id1100673977'
+    }],
+    name: 'kaia Health'
   },
   {
-    title: 'Un sistema digital de apoyo a la decisión (selfBACK) para mejorar el autocontrol del dolor lumbar: un estudio piloto con un seguimiento de 6 semanas',
-    summary: '<p>Muy pocas de las aplicaciones disponibles públicamente dirigidas al autocontrol del dolor lumbar se han probado rigurosamente y rara vez se describen sus fundamentos teóricos. La aplicación selfBACK se desarrolló en colaboración con usuarios finales y médicos y su contenido está respaldado por la mejor evidencia sobre el autocontrol del dolor lumbar. </p><p>Los objetivos de este estudio piloto fueron investigar las bases para los procedimientos de reclutamiento y selección para el ensayo controlado aleatorio (ECA) posterior, probar el proceso de inclusión en relación con los cuestionarios y la instalación de aplicaciones y, finalmente, investigar el cambio en el resultado primario a lo largo del tiempo.</p>',
+    description: '<p>SelfBack ofrece un programa de autogestión que se adapta semanalmente según el progreso del usuario,este incluye ejercicios, material educativo y un objetivo de actividad, todo ajustable para adaptarse al tiempo disponible del usuario,además del programa principal, proporciona diversas herramientas para el autocontrol durante episodios de dolor intenso, como ejercicios para aliviar el dolor y sugerencias de posición para dormir.</p>',
     technology: 'El software SelfBack tiene una Inteligencia artificial.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'Gratuita pero no esta disponible en colombia. La aplicación está disponible para iOS y Android. ',
     mode: 'La aplicación proporciona un plan de ejercicios personalizado para cada usuario, brinda educacion sobre el dolor lumbar y cómo manejarlo. permite a los usuarios conectarse con otros usuarios de SelfBack para obtener apoyo y consejos. Brinda Seguimiento del progreso.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'No esta disponible en colombia. Solo esta disponible en europa y en el idioma ingles.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1186/s40814-020-00604-2',
-    image: 'selfback.png',
+    barriers: 'No esta disponible en Colombia. Solo esta disponible en europa y en el idioma ingles.',
+    urls: [{
+      name: 'Un sistema digital de apoyo a la decisión (selfBACK) para mejorar el autocontrol del dolor lumbar: un estudio piloto con un seguimiento de 6 semanas',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1186/s40814-020-00604-2'
+    }],
+    image: 'selfback.webp',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en Play Store.',
+      url: 'https://play.google.com/store/apps/details?id=dk.selfback.selfback'
+    }],
     name: 'SelfBack'
   },
   {
-    title: 'Una aplicación asociada a la identificación para facilitar el tratamiento de la esclerosis múltiple adaptado al paciente',
-    summary: '<p>A pesar de las mejoras en el diagnóstico y el tratamiento, la esclerosis múltiple (EM) es la principal causa neurológica de discapacidad en adultos jóvenes. Como enfermedad crónica, la EM requiere un tratamiento complejo y desafiante. En este contexto, la eSalud ha ganado una relevancia cada vez mayor.</p><p> Aquí, nuestro objetivo es resumir las características beneficiosas de una aplicación móvil implementada recientemente en la rutina clínica de la EM, así como más allá de la EM. </p><p>PatientConcept es una aplicación de software multilingüe asociada a una identificación y con certificación CE que permite a los pacientes registrar datos de salud relevantes sin revelar ningún dato de identificación. Los pacientes pueden compartir voluntariamente sus datos de salud con médicos seleccionados. </p><p>Desde su implementación en 2018, alrededor de 3000 pacientes con EM han utilizado PatientConcept. Inicialmente desarrollada como una plataforma de comunicación médico-paciente, la aplicación mapea los planes de gestión de riesgos de todas las terapias modificadoras de enfermedades actuales y, por lo tanto, facilita el cumplimiento de las citas de seguimiento específicas. También permite el seguimiento continuo de varios PRO (resultados informados por el paciente), lo que permite una visión general amplia del curso de la enfermedad. Además, actualmente diversos estudios/proyectos evalúan la monitorización, seguimiento, diagnóstico y evaluaciones telemétricas de pacientes con otras enfermedades además de la EM. </p><p>En conjunto, PatientConcept ofrece una amplia gama de posibilidades para respaldar la comunicación médico-paciente, la implementación de planes de gestión de riesgos y la evaluación de PRO. Es una herramienta prometedora para facilitar el tratamiento de la EM y otras enfermedades crónicas adaptado al paciente.</p>',
+    description: '<p>PatientConcept es una aplicación diseñada para mejorar la experiencia del paciente en el ámbito de la atención médica,ofrece una plataforma interactiva que facilita el acceso del paciente a información relevante sobre su salud y tratamiento. </p><p>Entre sus características se incluye la gestión de citas, brinda un espacio  seguro para almacenar el historial médico completo del paciente, incluyendo diagnósticos previos, tratamientos y medicamentos recetados, envía recordatorios automáticos y facilita la comunicación segura entre el paciente y su equipo médico,proporciona recursos educativos sobre condiciones médicas y tratamientos, capacitando a los pacientes para tomar decisiones informadas sobre su cuidado,asimismo permite a los pacientes realizar un seguimiento de su progreso a lo largo del tiempo, ingresando datos como síntomas y niveles de actividad, entre otros aspectos relevantes para su salud.</p>',
     technology: 'Software de Inteligencia artificial.',
     stage: [STAGES.MAINTENANCE],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'facil acceso y está disponible gratuita plan basico. Compatible (para teléfonos inteligentes o tabletas iOS y Android). Se puede utilizar de forma multilingüe (alemán, inglés, italiano, francés, portugués. La app permite una comunicación estructurada bidireccional.',
-    mode: 'la aplicación proporciona un temporizador de medicación y simplifica la solicitud de recetas de seguimiento de medicamentos y terapias no farmacológicas  al médico tratante con el mínimo esfuerzo. acompaña el paciente en el cumplimiento del seguimiento especificado. recuerda al paciente las citas de seguimiento exámenes de imagen, de laboratorio o de consulta.',
+    mode: 'la aplicación proporciona un temporizador de medicación y simplifica la solicitud de recetas de seguimiento de medicamentos y terapias no farmacológicas  al médico tratante con el mínimo esfuerzo. acompaña el paciente en el cumplimiento del seguimiento especificado. recuerda al paciente las citas de seguimiento exámen]es de imagen, de laboratorio o de consulta.',
     systemsCorporals: [SYSTEMS_CORPORALS.CARDIORESPIRATORY, SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.DIGESTIVE, SYSTEMS_CORPORALS.URINARY, SYSTEMS_CORPORALS.NEUROLOGICAL],
     barriers: 'Limitaciones de los dispostivos, la eficiencia en la conectividad de la app, los costos de mantener una app con este flujo de información. No esta disponible en español.',
-    url: 'https://doi.org/10.3390/brainsci11081061',
+    urls: [{
+      name: 'Una aplicación asociada a la identificación para facilitar el tratamiento de la esclerosis múltiple adaptado al paciente',
+      url: 'https://doi.org/10.3390/brainsci11081061'
+    }],
     image: 'patientconcept.png',
+    linksInfoApp: [{
+      name: 'Más información en la página de PatientConcept.',
+      url: 'https://patientconcept.app/'
+    }],
     name: 'patientconcept'
   },
   {
-    title: 'Una aplicación móvil para el autocontrol de la incontinencia urinaria mixta y de urgencia en mujeres: ensayo controlado aleatorio',
-    summary: '<p>muchas mujeres experimentan incontinencia urinaria de urgencia (UUI) y mixta (MUI), pero comúnmente dudan en buscar atención. El acceso al tratamiento y el autocontrol de estas enfermedades pueden respaldarse mediante enfoques de eSalud. </p><p>Este estudio tuvo como objetivo investigar la eficacia de la aplicación móvil Tät II para el autocontrol de la IUU y la IUM en mujeres.</p>',
-    technology: ' software y inteligencia artificial, La aplicación Tät II ',
+    description: '<p>La aplicación se enfoca en cuatro áreas, entrenamiento de la vejiga, psicoeducación, consejos sobre estilo de vida y mensajes de  refuerzo automático,además, incluye un registro de ejercicios, consejos personalizados se crean utilizando la información del diario de la vejiga del usuario y las respuestas al cuestionario inicial, con el objetivo de dirigir al usuario hacia las características de la aplicación más pertinentes para sus síntomas y estilo de vida.</p>',
+    technology: 'software y inteligencia artificial.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.PATIENT],
     accessibility: 'Accesibles para personas con discapacidad auditiva y baja visión. App movil disponible para cualquier sistema operativo.',
     mode: 'Esta aplicación brinda educacion en salud, rastreo de sintomas medicamentos y citas. entrenamiento de los músculos del suelo pélvico, entrenamiento de la vejiga.',
     systemsCorporals: [SYSTEMS_CORPORALS.URINARY],
     barriers: 'Ultima actualizacion 2017',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/19439',
+    urls: [{
+      name: 'Una aplicación móvil para el autocontrol de la incontinencia urinaria mixta y de urgencia en mujeres: ensayo controlado aleatorio',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/19439'
+    }],
     image: 'tat-2.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en la Play Store',
+      url: 'https://play.google.com/store/apps/details?id=tat2.tat2'
+    }],
     name: 'aplicación Tät II'
   },
   {
-    title: 'Una aplicación móvil que utiliza el ejercicio terapéutico y la educación para el autocuidado en pacientes con artritis reumatoide de la mano: un protocolo de ensayo controlado aleatorizado',
-    summary: '<p>El ejercicio terapéutico es un enfoque seguro y rentable para aliviar los síntomas relacionados con la artritis reumatoide de las manos (AR).</p><p> Este estudio tiene como objetivo investigar las diferencias en el autocontrol entre una aplicación de teléfono inteligente (CareHand), el uso de ejercicios manuales y consejos educativos, en comparación con un enfoque estándar, la función general de la mano, la intensidad del dolor, la rigidez y la fuerza de agarre y pellizco en pacientes con AR manual</p>',
-    technology: 'el software CareHand utiliza Inteligencia artificial',
+    description: '<p>Esta App permite abordar problemas reumatológicos de mano y dedos, ofrece un programa completo y personalizado para cada usuario, mediante esta aplicación, los pacientes podrán acceder a una serie de ejercicios y recomendaciones adaptadas a su patología y momento de recuperación. Además, la app cuenta con funcionalidades especiales para profesionales, quienes podrán realizar un seguimiento del desempeño de cada usuario y analizar variables relacionadas con el dolor y la funcionalidad.</p> <p>Con esta descripción, queda claro que la app es una herramienta integral y especializada en la rehabilitación de problemas reumatológicos de mano y dedos.</p>',
+    technology: '"Software de Inteligencia artificial, Biofeeback.',
     stage: [STAGES.IMPLEMENTATION],
-    usability: [USABILITY.THERAPIST, USABILITY.PATIENT],
-    accessibility: 'Es una aplicación gratuita, accesible y fácil de usar disponible para cualquier sistema operativo. Compatibilidad con lectores de pantalla.',
+    usability: [USABILITY.THERAPIST, USABILITY.USERS],
+    accessibility: 'Es especificola intervencion fisioterapeutica de mano, comprende un  sistema conjunto de prescripcion ,tratamiento, ejercicios asistidos, asesoramientos  educativos estrategias de adherencia y seguimiento para la rehabilitacion, monitoreo, evalua aspectos generales de la mano, como la intensidad del dolor, la rigidez, la fuerza de agarre y pellizco, con el propósito de arrojar luz sobre la eficacia de estas intervenciones en pacientes que sufren de artritis reumatoide en las manos.',
     mode: 'esta app roporciona asesoramiento educativo, y un método estándar. Se evaluan aspectos generales de la mano, como la intensidad del dolor, la rigidez, y la fuerza de agarre y pellizco, con el propósito de arrojar luz sobre la eficacia de estas intervenciones en pacientes que sufren de artritis reumatoide en las manos.',
-    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'ultima actualizacion 2019',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/32912305/',
+    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NERVOUS],
+    barriers: 'Debe ser usada en un dispositivo Tablet con un sistema operativo igual o superior a android 6.0.1 e igual o superior a IOS 14.0. Con una pantalla mayor a 7 y una conexión a internet estable para no limitar las funcionalidadesde la aplicación. Su ultima actualizacion 2019',
+    urls: [{
+      name: 'Un programa de ejercicio, educativo y de autocuidado ofrecido con una aplicación para teléfono inteligente (CareHand) en adultos con artritis reumatoide de las manos: ensayo controlado aleatorio. JMIR Mhealth Uhealth.',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/35462'
+    }, {
+      name: 'Un programa de ejercicio, educativo y de autocuidado ofrecido con una aplicación para teléfono inteligente (CareHand) en adultos con artritis reumatoide de las manos: ensayo controlado aleatorio. JMIR Mhealth Uhealth.',
+      url: 'https://pubmed.ncbi.nlm.nih.gov/32912305/'
+    }],
     image: 'carehand.png',
+    linksInfoApp: [{
+      name: 'Más información en la página de CareHand',
+      url: 'https://appadvice.com/app/carehand-mano-reumatol-c3-b3gica/1465692985'
+    }],
     name: 'CareHand'
   },
   {
-    title: 'Una herramienta de aplicación móvil para el análisis de la postura de pie: desarrollo, validez y confiabilidad.',
-    summary: '<p>El uso de aplicaciones móviles para evaluaciones posturales ha despertado un interés creciente debido al uso generalizado de teléfonos inteligentes. Aunque se utilizan algunas aplicaciones móviles, todavía se justifican herramientas móviles validadas para una evaluación postural precisa. </p><p>Este estudio tuvo como objetivo desarrollar la herramienta de aplicación móvil Fizyoprint para evaluar la postura de pie e investigar la validez y confiabilidad de la aplicación en adultos jóvenes.</p>',
+    description: '<p>Desarrollado para su uso en clínicas para permitir a los profesionales ofrecer un servicio único e innovador a sus clientes,el sistema evalúa la postura general para mejorar la simetría muscular y abordar los trastornos musculoesqueléticos relacionados con el dolor de espalda y otras molestias, ofrece una evaluación  detallada y cuantificable de las desviaciones posturales, así como un programa de ejercicios personalizado en solo cuatro pasos. </p><p>Estos incluyen la captura de imágenes sin contacto, la detección y corrección de desviaciones impulsadas por inteligencia artificial, la personalización del programa de ejercicios, que puede ser ajustado por un profesional, y el seguimiento del progreso postural y del dolor.</p>',
     technology: 'el software Fizyoprint Inteligencia artificial',
     stage: [STAGES.DEVELOPMENT],
-    usability: [USABILITY.THERAPIST, USABILITY.PATIENT],
+    usability: [USABILITY.THERAPIST],
     accessibility: 'plan basico requieree de suscripcion mensual compatible con el sistema de análisis postural BioTonix para la evaluación de la postura de pie.',
     mode: 'Uso de apps moviles mediante ejercicios guiados. La app Te pedirá que te tomes fotos desde diferentes ángulos (frente, espalda y lateral). La aplicación analizará tus fotos y te dará un informe con tus medidas posturales. Proporcionará ejercicios y consejos para ayudarte a mejorar tu postura.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
     barriers: 'Se necesitan más estudios para probar la aplicación actual en diferentes poblaciones y condiciones musculoesqueléticas. La aplicación requiere que los usuarios tengan un conocimiento básico de anatomía y fisioterapia.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1007/s11845-021-02827-5',
+    urls: [{
+      name: 'Una herramienta de aplicación móvil para el análisis de la postura de pie: desarrollo, validez y confiabilidad.',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1007/s11845-021-02827-5'
+    }],
     image: 'fizyoprint.png',
-    name: 'Fizyoprint'
+    linksInfoApp: [{
+      name: 'Más información en la página de Biotonix',
+      url: 'https://biotonixposture.com/'
+    }, {
+      name: 'Biotonix Fizyoprint notre produit',
+      url: 'https://biotonixposture.com/notre-produit/'
+    }, {
+      name: 'Biotonix Fizyoprint professionals',
+      url: 'https://biotonixposture.com/professionals/'
+    }],
+    name: 'Biotonix Fizyoprint'
   },
   {
-    title: 'Uso de la vigilancia poscomercialización para evaluar eventos relacionados con la seguridad en una aplicación de rehabilitación digital (aplicación Kaia): estudio observacional',
-    summary: '<p>El dolor lumbar (LBP) afecta a casi 4 de cada 5 personas durante su vida y es la principal causa de discapacidad a nivel mundial. La terapéutica digital está surgiendo como opciones de tratamiento eficaces para las personas que padecen dolor lumbar. A pesar del aumento de la evidencia que demuestra los beneficios de estas terapias para reducir el dolor lumbar y mejorar los resultados funcionales, se han recopilado sistemáticamente pocos datos sobre sus perfiles de seguridad. </p><p>Este estudio tiene como objetivo evaluar el perfil de seguridad de una terapéutica digital multidisciplinaria para el dolor lumbar, la aplicación Kaia</p>',
-    technology: 'El software kaia funciona a traves de un sistema de monitoreo.',
-    stage: [STAGES.IMPLEMENTATION],
-    usability: [USABILITY.THERAPIST, USABILITY.PATIENT, USABILITY.USERS],
-    accessibility: 'Gratis para descargar y usar. Disponible para iOS y Android. Requiere un teléfono inteligente o tableta compatible.',
-    mode: 'Ejercicios asistidos por tecnología Monitoreo remoto de la rehabilitación.',
-    systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'no está disponible en español.',
-    url: 'https://doi.org/10.2196/25453',
-    image: 'kaia.png',
-    name: 'kaia'
-  },
-  {
-    title: 'Uso de un programa de terapia de ejercicio basado en una aplicación que incluye técnicas cognitivo-conductuales para el tratamiento de la claudicación intermitente',
-    summary: '<p>Las guías de práctica clínica recomiendan la terapia con ejercicio supervisado (SET) como terapia de primera línea para pacientes con enfermedad arterial periférica (EAP) y claudicación intermitente (CI). </p><p>Los criterios de uso apropiado de la CI de la Sociedad de Cirugía Vascular consideran que la terapia con ejercicios (TE) es apropiada para todos los pacientes con CI. Sin embargo, el cumplimiento de las recomendaciones para el uso de ET suele ser deficiente debido a la falta de disponibilidad, los requisitos de viaje de los pacientes y el costo. Los resultados de los programas de TE en el hogar han sido mixtos con una tendencia hacia mejores resultados con una participación más frecuente del paciente. </p><p>Se evaluó la viabilidad, el uso y la eficacia de un programa de ET estructurado basado en una aplicación de 12 semanas que utiliza técnicas de terapia cognitivo-conductual (TCC) para la CI.</p>',
-    technology: 'el software SVS SET (Sistema de evaluación de seguridad vascular) tinene una inteligencia artificial que se utiliza para calcular la puntuación de riesgo individualizada.',
-    stage: [STAGES.IMPLEMENTATION],
+    description: '<p>El programa SVS SET (Sistema de evaluación de seguridad vascular) aprovecha los sensores y la conectividad de los teléfonos inteligentes para registrar y envia datos sobre la actividad física durante las sesiones de ejercicio, esta operación requiere una aplicación móvil y abarca desde una evaluación inicial hasta caminatas diarias de cinco días a la semana, complementadas con contenido de podcast y motivación adicional, incluye también una evaluación de progreso a mitad del camino y otra al final del programa, así como asesoramiento constante sobre salud, ofrece unidades educativas y encuestas opcionales, brindando la posibilidad de interactuar con entrenadores de salud y recibir dosis diarias de motivación.</p>',
+    technology: 'Inteligencia artificial que se utiliza para calcular la puntuación de riesgo individualizada.',
+    stage: [STAGES.DEVELOPMENT],
     usability: [USABILITY.THERAPIST],
     accessibility: 'Compatibilidad con dispositivos: SVS SET es compatible con la mayoría de los navegadores web y dispositivos móviles. SVS SET es compatible con algunas tecnologías de asistencia.',
     mode: 'La herramienta utiliza un algoritmo para calcular una puntuación de riesgo individualizada para el paciente. La puntuación de riesgo se puede utilizar para ayudar a los médicos a tomar decisiones sobre el tratamiento y la planificación preoperatoria.',
     systemsCorporals: [SYSTEMS_CORPORALS.CARDIOVASCULAR],
     barriers: 'Familiaridad con la herramienta.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.jvs.2022.06.087',
+    urls: [{
+      name: 'Uso de un programa de terapia de ejercicio basado en una aplicación que incluye técnicas cognitivo-conductuales para el tratamiento de la claudicación intermitente',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.jvs.2022.06.087'
+    }],
     image: 'svs.png',
+    linksInfoApp: [{
+      name: 'Más información de la aplicación en el sitio web de Vascular News',
+      url: 'https://vascularnews.com/svs-pilots-set-app-for-peripheral-arterial-disease-patients/'
+    }],
     name: 'SVS SET'
   },
   {
-    title: 'Uso de una aplicación de salud móvil para mejorar la adherencia de los pacientes al tratamiento de la hipertensión: un ensayo clínico no aleatorizado',
-    summary: '<p>La mala adherencia al tratamiento de la hipertensión aumenta las complicaciones de la enfermedad y se caracteriza por una falta de conciencia y aceptación del tratamiento en curso. Las aplicaciones móviles de salud (mHealth) pueden optimizar los procesos y facilitar el acceso a la información sanitaria combinando métodos de tratamiento con soluciones atractivas. </p><p>En este estudio, nuestro objetivo fue verificar la influencia  del uso de una aplicación mHealth en la adherencia de los pacientes al tratamiento de la hipertensión, y también examinar cómo la experiencia del usuario con la aplicación influyó en los resultados.</p>',
+    description: '<p>La aplicación está diseñada para empoderar a los pacientes en el manejo de la hipertensión, ofreciendo herramientas para el autocontrol de la salud, esto incluye el registro de diversos factores relacionados con la hipertensión, como la presión arterial, el peso, la circunferencia de la cintura, entre otros, también proporciona evaluaciones de riesgos basadas en valores de referencia, recomendaciones, alertas y recordatorios sobre medicamentos, así como registros de actividad física y mediciones de presión arterial,todos estos elementos están centrados en promover un estilo de vida saludable que facilite el tratamiento de la hipertensión.</p><p> Los datos del paciente se almacenan en la nube y pueden ser accesibles para profesionales de la salud autorizados a través de un panel web, lo que permite un seguimiento remoto del paciente.</p>',
     technology: 'Software con Inteligencia artificial',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
-    accessibility: 'es de facil acceso Accesibles para personas con discapacidad auditiva y baja visión ',
-    mode: 'proporciona  ejercicios guiados, seguimiento de su progreso a lo largo del tiempo,educacion en salud, ',
+    accessibility: 'es de facil acceso. Accesibles para personas con discapacidad auditiva y baja visión ',
+    mode: 'proporciona ejercicios guiados, seguimiento de su progreso a lo largo del tiempo, educacion en salud.',
     systemsCorporals: [SYSTEMS_CORPORALS.CARDIOVASCULAR, SYSTEMS_CORPORALS.MUSCULOSKELETAL],
-    barriers: 'ultima actuallizacion 17/06/2019',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.7717/peerj.11491',
+    barriers: 'Última actuallizacion 17/06/2019',
+    urls: [{
+      name: 'Uso de una aplicación de salud móvil para mejorar la adherencia de los pacientes al tratamiento de la hipertensión: un ensayo clínico no aleatorizado.',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.7717/peerj.11491'
+    }],
     image: 'e-lifestyle.png',
+    linksInfoApp: [{
+      name: 'Más información en el sitio web de la UDES.',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.7717/peerj.11491'
+    }],
     name: 'e-LifeStyle'
   },
   {
-    title: 'Uso de una plataforma de atención basada en teléfonos inteligentes después de una artroplastia primaria parcial y total de rodilla: seguimiento de 1 año de un ensayo controlado aleatorio prospectivo',
-    summary: '<p>El propósito de este estudio fue determinar la no inferioridad de una plataforma educativa sobre ejercicios basada en teléfonos inteligentes después de una artroplastia primaria de rodilla en comparación con un modelo tradicional de fisioterapia presencial.</p><p> Este estudio analizó los resultados de 1 año de los pacientes y la satisfacción del paciente mientras evaluaba la utilización de los recursos de atención médica y es un seguimiento de 1 año de un estudio que analizó los resultados de 90 días anteriores.</p>',
+    description: '<p>La aplicación mymobility® con Apple Watch permite a los pacientes conectarse con su cirujano y equipo médico antes y después de ciertos procedimientos quirúrgicos, lesiones o traumatismos,proporciona instrucciones detalladas y listas de tareas diarias para respaldar la preparación y recuperación del paciente,a través de la aplicación en el iPhone, los usuarios pueden acceder a educación, encuestas y ejercicios seleccionados por su cirujano,el progreso del paciente se monitorea mediante el Apple Watch, que registra datos como pasos, pisos y frecuencia cardíaca, genera informes clínicos basados en estos datos y proporciona recordatorios para completar actividades. </p><p>Además, realiza un seguimiento de la recuperación del paciente mediante el recuento de pasos, pisos y métricas de frecuencia cardíaca, lo que ayuda al paciente y al cirujano a evaluar el progreso funcional durante la recuperación.</p>',
     technology: 'Sofware con inteligencia artificial.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
@@ -491,36 +744,55 @@ export const applications: Application[] = [
     mode: 'proporciona ejercicios asistidos personalziados y monitoreo remoto',
     systemsCorporals: [SYSTEMS_CORPORALS.CARDIOVASCULAR],
     barriers: 'los  usuarios deben posser iPhone de Apple capaz de emparejarse con el Apple Watch y ser móviles con no más de un bastón o una sola muleta como ayuda. La aplicación puede ser costosa para algunos usuarios.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.arth.2023.02.082',
+    urls: [{
+      name: 'Uso de una plataforma de atención basada en teléfonos inteligentes después de una artroplastia primaria parcial y total de rodilla: seguimiento de 1 año de un ensayo controlado aleatorio prospectivo',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.1016/j.arth.2023.02.082'
+    }],
     image: 'mymobility.png',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en la App Store',
+      url: 'https://apps.apple.com/us/app/mymobility-patient-app/id1438566065'
+    }],
     name: 'mymobility® con Apple Watch'
   },
   {
-    title: 'Viabilidad, usabilidad y disfrute de un programa de ejercicio en el hogar impartido a través de una aplicación de ejercicio para la salud musculoesquelética en adultos mayores que viven en la comunidad: estudio piloto prospectivo a corto plazo',
-    summary: '<p>Muchos adultos mayores eligen y prefieren hacer ejercicio en casa, pero para lograr los mayores beneficios, se debe prescribir el tipo y la dosis correctos de ejercicio y mantener el cumplimiento. Los avances en las tecnologías de salud digital ahora brindan a los profesionales del ejercicio la oportunidad de ofrecer y monitorear programas de ejercicio personalizados y basados ​​en evidencia para cualquier persona en cualquier momento.</p><p> El objetivo de este estudio fue evaluar la viabilidad, usabilidad y disfrute de una aplicación de prescripción de ejercicios basada en la web como plataforma para que los profesionales del ejercicio entreguen y monitoreen de forma remota un programa de ejercicio multicomponente en el hogar, personalizado individualmente (impartido a través de una tableta). computadoras) hasta adultos mayores que viven de forma independiente en la comunidad.</p>',
-    technology: 'Sofware: de iartigencia artificial.',
+    description: '<p>La aplicación PhysiApp® permite acceder al programa de ejercicios personalizado, utilizando el código de acceso proporcionado por el proveedor de atención médica, donde puedes descargar el programa de ejercicios en casa, el cual incluye videos de alta definición y narración clara, además, puedes usar Chromecast para reproducir los videos en tu dispositivo Chromecast.</p><p>Con esta aplicación, conocerás con precisión los ejercicios prescritos y cómo realizarlos correctamente, también puedes proporcionar información segura a tu fisioterapeuta sobre cuánto has completado de cada ejercicio y si has experimentado algún dolor, realiza seguimiento detallado de tu progreso facilitando. la intervención del fisioterapeuta si es necesario.</p>',
+    technology: 'Sofware de inteligencia artificial.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
-    accessibility: 'plan basico, requiere de suscrpcion mensual. Interfaz de usuario intuitiva  accesible para  usuarios con discapacidad visual y  auditiva ',
+    accessibility: 'plan basico, requiere de suscrpcion mensual. Interfaz de usuario intuitiva  accesible para  usuarios con discapacidad visual y auditiva ',
     mode: 'esta app proporciona a los pacientes ejercicios asistidos con  monitoreo de forma remota,brinda seguimiento del progreso.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
     barriers: 'el usuario requiere código de acceso para poder ingresar a la app.',
-    url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/21094',
-    image: 'physiapp.png',
+    urls: [{
+      name: 'Viabilidad, usabilidad y disfrute de un programa de ejercicio en el hogar impartido a través de una aplicación de ejercicio para la salud musculoesquelética en adultos mayores que viven en la comunidad: estudio piloto prospectivo a corto plazo',
+      url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/21094'
+    }],
+    image: 'physiapp-2.webp',
+    linksInfoApp: [{
+      name: 'Enlace de descarga en la Play Store',
+      url: 'https://play.google.com/store/apps/details?id=com.physitrack.physiapp&hl=es_DO'
+    }],
     name: 'PhysiApp'
   },
   {
-    title: 'Intervenciones basadas en Fitbit para obtener resultados de un estilo de vida saludable: revisión sistemática y metanálisis',
-    summary: '<p>Los objetivos de este metanálisis son evaluar la efectividad de las intervenciones que incorporan un dispositivo Fitbit para obtener resultados de estilo de vida saludable (p. ej., pasos, actividad física de moderada a vigorosa y peso) e identificar qué componentes adicionales de la intervención o características del estudio son los más efectivos para mejorar los resultados de un estilo de vida saludable.',
-    technology: 'El software La aplicación Fitbit es una aplicación de software móvil con IA Inteligencia Artificial.',
+    description: '<p>Fitbit es una aplicación diseñada para promover un estilo de vida activo y saludable, ofreciendo diversas características para monitorear y mejorar la salud en general, permite el seguimiento de la actividad física, el sueño y la ingesta de alimentos, así como el ritmo cardíaco si el dispositivo cuenta con un sensor de ritmo cardíaco, también fomenta la conexión social al permitir a los usuarios conectarse con amigos y familiares para compartir logros y participar en desafíos.</p>',
+    technology: 'software móvil con IA Inteligencia Artificial.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.PATIENT, USABILITY.USERS],
     accessibility: 'Requiere de suscripcion premium. La App ofrece algunas funciones de accesibilidad para usuarios con discapacidades auditivas.',
-    mode: 'La aplicación Fitbit puede usarse para rastrear una variedad de actividades, como pasos, distancia recorrida, calorías quemadas y minutos de actividad física. Seguimiento del sueño: La aplicación Fitbit puede usarse para rastrear la calidad y la duración del sueño. La aplicación Fitbit permite a los usuarios establecer objetivos de actividad física y sueño. Esta app permite a los usuarios seguir su progreso a lo largo del tiempo y ver cómo sus hábitos están mejorando. Además ofrece funciones de motivación, como desafíos y recompensas, para ayudar a los usuarios a mantenerse activos (biofeedback).',
+    mode: '<p>Monitoreo de la actividad física: La aplicación Fitbit puede usarse para rastrear una variedad de actividades, como pasos, distancia recorrida, calorías quemadas y minutos de actividad física. Seguimiento del sueño: La aplicación Fitbit puede usarse para rastrear la calidad y la duración del sueño. </p><p><strong>Establecimiento de objetivos:</strong> La aplicación Fitbit permite a los usuarios establecer objetivos de actividad física y sueño. </p><p><strong>Seguimiento del progreso:</strong> La aplicación Fitbit permite a los usuarios seguir su progreso a lo largo del tiempo y ver cómo sus hábitos están mejorando. </p><p>Ofrece funciones de motivación, como desafíos y recompensas, para ayudar a los usuarios a mantenerse activos, biofeedback.</p>',
     systemsCorporals: [SYSTEMS_CORPORALS.CARDIOVASCULAR, SYSTEMS_CORPORALS.MUSCULOSKELETAL],
     barriers: 'La precisión de algunos de los sensores de la aplicación Fitbit puede ser cuestionable. No es lo suficientemente motivadora para ayudarlos a mantener un estilo de vida activo.',
-    url: 'https://www.jmir.org/2020/10/e23954/',
+    urls: [{
+      name: 'Intervenciones basadas en Fitbit para obtener resultados de un estilo de vida saludable: revisión sistemática y metanálisis',
+      url: 'https://www.jmir.org/2020/10/e23954/'
+    }],
     image: 'fitbit.png',
+    linksInfoApp: [{
+      name: 'Más información en Fitbit',
+      url: 'https://www.fitbit.com/global/es/technology/fitbit-app'
+    }],
     name: 'Fitbit'
   }
 ] as const

@@ -6,18 +6,23 @@ export type SystemCorporal = typeof SYSTEMS_CORPORALS[keyof typeof SYSTEMS_CORPO
 
 export type NameItemsSelected = typeof NAME_ITEMS_SELECT[keyof typeof NAME_ITEMS_SELECT]
 
+export interface Urls {
+  name: string
+  url: string
+}
+
 export interface Application {
   name: string // nombre de la aplicacion
-  title: string // titulo de la aplicacion
-  summary: string // resumen de la aplicacion
+  description: string // descripcion de la aplicacion
   technology: string // tipo de tecnologia de la aplicacion
   stage: Stage[] // etapa de uso de la aplicacion
   usability: Usability[] // usabilidad de la aplicacion
   accessibility: string // accesibilidad de la aplicacion
-  mode: string // modo de uso de la aplicacion
+  mode?: string // modo de uso de la aplicacion
   systemsCorporals: SystemCorporal[] // sistemas corporales de la aplicacion
   barriers: string // barreras de uso de la aplicacion
-  url: string // url para mas informacion de la aplicacion
+  urls: Urls[] // url para mas informacion de la aplicacion
+  linksInfoApp?: Urls[] // informacion de la aplicacion
   image: string // imagen de la aplicacion
 }
 
