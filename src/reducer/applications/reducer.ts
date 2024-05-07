@@ -10,5 +10,19 @@ export const reducer = (state: AplicationStateReducer, action: AplicationActionR
     }
   }
 
+  if (action.type === 'RESET') {
+    return {
+      ...state,
+      applications: apps
+    }
+  }
+
+  if (action.type === 'FILTER_BY_NAME') {
+    return {
+      ...state,
+      applications: apps.filter(app => app.name.toLowerCase().includes(action.payload.toLowerCase()))
+    }
+  }
+
   return state
 }

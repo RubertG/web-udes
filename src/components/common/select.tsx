@@ -1,6 +1,6 @@
 'use client'
 
-import { Fragment, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { Check, ChevronUpDown } from '@/components/common/icons'
 import { firstLetterCapitalized } from '@/utils/first-letter-capitalized'
@@ -15,11 +15,15 @@ interface SelectProps {
 
 export function Select ({
   items,
-  options: { nameItems, textOption, defaultName },
+  options: { nameItems, textOption, state },
   className = '',
   filter
 }: SelectProps) {
-  const [selected, setSelected] = useState<string>(defaultName ?? nameItems)
+  const [selected, setSelected] = useState<string>(nameItems)
+
+  useEffect(() => {
+    if (state == null) setSelected(nameItems)
+  }, [state])
 
   const onChange = (item: string) => {
     setSelected(item)
@@ -28,8 +32,8 @@ export function Select ({
 
   return (
     <Listbox value={selected} onChange={onChange}>
-      <div className={`relative mt-1 ${className}`}>
-        <Listbox.Button className="relative w-full cursor-pointer rounded-lg bg-bg-100 py-2 pl-3 pr-8 text-left shadow-principal text-sm lg:text-base border-2 border-gray-200 text-text-100">
+      <div className={`relative ${className}`}>
+        <Listbox.Button className="relative w-full cursor-pointer rounded-lg bg-bg-100 py-2 pl-3 pr-8 text-left shadow-principal text-sm border-2 border-gray-200 text-text-100">
           <span className="block truncate">
             {
               selected === nameItems

@@ -26,16 +26,21 @@ export interface Application {
   image: string // imagen de la aplicacion
 }
 
+export interface StateSelects {
+  stage: Stage | null
+  system: SystemCorporal | null
+}
+
 export interface OptionsSelect {
   nameItems: NameItemsSelected
   textOption: string
-  defaultName?: string | null
+  state: string | null
 }
 
 export interface AplicationStateReducer {
   applications: Application[]
 }
 
-export type AplicationActionReducer =
-  | { type: 'FILTER', payload: { stage: Stage | null, system: SystemCorporal | null } }
-  | { type: 'RESET' }
+export type AplicationActionReducer = { type: 'FILTER', payload: { stage: Stage | null, system: SystemCorporal | null } }
+| { type: 'RESET' }
+| { type: 'FILTER_BY_NAME', payload: string }

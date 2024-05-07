@@ -5,6 +5,11 @@ interface IconProps {
   'aria-hidden'?: boolean
 }
 
+interface LoadingProps extends IconProps {
+  loading: boolean
+  color?: string
+}
+
 export const Separator: FC<IconProps> = ({ className = '' }) => {
   return (
     <div className="translate-y-1">
@@ -21,6 +26,11 @@ export const IA: FC<IconProps> = ({ className = '' }) => {
   )
 }
 
+export const Loading: FC<LoadingProps> = ({ className = '', loading = true, color = 'currentColor' }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" className={`${className} transition-opacity ${loading ? 'opacity-100' : 'opacity-0'}`}><path fill="none" stroke={color} strokeWidth="15" strokeLinecap="round" strokeDasharray="300 385" strokeDashoffset="0" d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z"><animate attributeName="stroke-dashoffset" calcMode="spline" dur="2" values="685;-685" keySplines="0 0 1 1" repeatCount="indefinite"></animate></path></svg>
+  )
+}
 export const Check: FC<IconProps> = ({ className = '', 'aria-hidden': ariaHidden = true }) => {
   return (
     <svg
@@ -55,6 +65,26 @@ export const ChevronUpDown: FC<IconProps> = ({ className = '', 'aria-hidden': ar
         strokeLinejoin="round"
         d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
       />
+    </svg>
+  )
+}
+
+export const MagnifyingGlass: FC<LoadingProps> = ({ className = '', loading = false }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={`icon icon-tabler icon-tabler-search ${className} transition-opacity ${!loading ? 'opacity-100' : 'opacity-0'}`}
+      width="100"
+      height="100"
+      viewBox="0 0 24 24"
+      strokeWidth="2"
+      stroke="#006cb0"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+      <path d="M21 21l-6 -6" />
     </svg>
   )
 }

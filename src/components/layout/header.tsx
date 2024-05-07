@@ -7,7 +7,7 @@ export const Header = () => {
       className='bg-gradient-principal relative'
     >
       <section
-        className='max-w-4xl mx-auto py-16 px-2 md:px-0'
+        className='max-w-4xl mx-auto py-16 lg:py-12 px-2 md:px-0'
       >
         <h1
           className="font-black text-4xl lg:text-6xl text-center text-white"
@@ -15,7 +15,7 @@ export const Header = () => {
         <p
           className='text-center text-sm lg:text-base text-bg-200 mt-6'
         >
-          La tecnología ha transformado la fisioterapia, ofreciendo nuevas formas de abordar la rehabilitación y el tratamiento de lesiones musculoesqueléticas. Desde dispositivos portátiles de seguimiento hasta realidad virtual, estas herramientas mejoran la precisión, eficacia y experiencia del paciente en la terapia física.
+          Bienvenido a FisioTec, tu portal especializado en herramientas tecnológicas para la atención en fisioterapia. Aquí encontrarás una recopilación completa y actualizada de los últimos avances tecnológicos en el campo, fruto de un  proyecto de revisión sistemática. Encontrarás información detallada sobre las herramientas tecnológicas más innovadoras: desde apps móviles para ejercicios personalizados hasta dispositivos de realidad virtual para la rehabilitación.
         </p>
         <IA className='w-80 md:w-1/2 mx-auto mt-5' />
       </section>

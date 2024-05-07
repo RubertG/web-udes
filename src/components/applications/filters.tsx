@@ -5,26 +5,31 @@ import { Select } from '../common/select'
 import { type AplicationActionReducer } from '@/types/types'
 import { type FC } from 'react'
 import { useSelects } from '@/hooks/useSelects'
+import { Searcher } from '../common/searcher'
 
 interface SelectsProps {
   dispatch: (action: AplicationActionReducer) => void
 }
 
-export const Selects: FC<SelectsProps> = ({ dispatch }) => {
-  const { filterStage, filterSystem, stage, system } = useSelects({ dispatch })
+export const Filters: FC<SelectsProps> = ({ dispatch }) => {
+  const { filterStage, filterSystem, filterByName, inputRef, states } = useSelects({ dispatch })
 
   return (
     <article
-      className='flex flex-wrap gap-3 gap-y-1'
+      className='flex flex-wrap md:flex-nowrap gap-2 gap-y-2 md:gap-y-0'
     >
+      <Searcher
+        filter={filterByName}
+        ref={inputRef}
+      />
       <Select
         items={Object.values(SYSTEMS_CORPORALS)}
         options={{
           nameItems: NAME_ITEMS_SELECT.SYSTEM,
           textOption: 'Todos los sistemas',
-          defaultName: system
+          state: states.system
         }}
-        className='w-52'
+        className='min-w-48'
         filter={filterSystem}
       />
       <Select
@@ -32,9 +37,9 @@ export const Selects: FC<SelectsProps> = ({ dispatch }) => {
         options={{
           nameItems: NAME_ITEMS_SELECT.STAGE,
           textOption: 'Todas las etapas',
-          defaultName: stage
+          state: states.stage
         }}
-        className='w-48'
+        className='min-w-44'
         filter={filterStage}
       />
     </article>

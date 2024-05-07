@@ -1,57 +1,68 @@
-import { type Stage, type SystemCorporal, type AplicationActionReducer } from '@/types/types'
-import { useSearchParams, useRouter } from 'next/navigation'
+import { type Stage, type SystemCorporal, type AplicationActionReducer, type StateSelects } from '@/types/types'
+import { useRef, useState } from 'react'
 
 interface SelectsProps {
   dispatch: (action: AplicationActionReducer) => void
 }
 
 export const useSelects = ({ dispatch }: SelectsProps) => {
-  const router = useRouter()
-  const searchParams = useSearchParams()
-  const stage = searchParams.get('etapa')
-  const system = searchParams.get('sistema')
+  const [states, setStates] = useState<StateSelects>({
+    stage: null,
+    system: null
+  })
+  const inputRef = useRef<HTMLInputElement>(null)
 
   const filterSystem = (newSystem: string | null) => {
-    if (newSystem === system) return
-    const newSearchParams = new URLSearchParams({
-      ...(newSystem ? { sistema: newSystem } : {}),
-      ...(stage ? { etapa: stage } : {})
+    setStates({
+      ...states,
+      system: newSystem ? newSystem as SystemCorporal : null
     })
+
+    if (inputRef.current) inputRef.current.value = ''
 
     dispatch({
       type: 'FILTER',
       payload: {
-        stage: stage ? stage as Stage : null,
+        stage: states.stage ?? null,
         system: newSystem ? newSystem as SystemCorporal : null
       }
     })
-
-    router.push(`?${newSearchParams.toString()}`, { scroll: false })
   }
 
   const filterStage = (newStage: string | null) => {
-    if (newStage === stage) return
-
-    const newSearchParams = new URLSearchParams({
-      ...(system ? { sistema: system } : {}),
-      ...(newStage ? { etapa: newStage } : {})
+    setStates({
+      ...states,
+      stage: newStage ? newStage as Stage : null
     })
+
+    if (inputRef.current) inputRef.current.value = ''
 
     dispatch({
       type: 'FILTER',
       payload: {
-        system: system ? system as SystemCorporal : null,
+        system: states.system ?? null,
         stage: newStage ? newStage as Stage : null
       }
     })
+  }
 
-    router.push(`?${newSearchParams.toString()}`, { scroll: false })
+  const filterByName = (name: string) => {
+    setStates({
+      ...states,
+      stage: null,
+      system: null
+    })
+    dispatch({
+      type: 'FILTER_BY_NAME',
+      payload: name
+    })
   }
 
   return {
-    system,
-    stage,
     filterSystem,
-    filterStage
+    filterStage,
+    filterByName,
+    states,
+    inputRef
   }
 }

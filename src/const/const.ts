@@ -19,15 +19,11 @@ export const USABILITY = {
 export const SYSTEMS_CORPORALS = {
   MUSCULOSKELETAL: 'musculoesqueletico',
   CARDIOVASCULAR: 'cardiovascular',
-  CARDIOPULMONARY: 'cardiopulmonar',
   DIGESTIVE: 'digestivo',
   URINARY: 'urinario',
-  INMUNE: 'inmunitario',
   NEUROLOGICAL: 'neurológico',
   NERVOUS: 'nervioso',
   SENSORIAL: 'sensorial',
-  NEUROMOTOR: 'neuromotor',
-  ENDOCRINE: 'endocrino',
   CARDIORESPIRATORY: 'cardiorespiratorio',
   VESTIBULAR: 'vestibular',
   NERVOUS_CENTRAL: 'nervioso central'
