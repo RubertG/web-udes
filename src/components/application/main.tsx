@@ -3,6 +3,7 @@ import { ExternalLink } from '../common/icons'
 import { Section } from './section'
 import { type FC } from 'react'
 import { listToString } from '@/utils/list-to-string'
+import { firstLetterCapitalizedHtml } from '@/utils/first-letter-capitalized'
 
 type Props = Pick<Application, 'accessibility' | 'barriers' | 'description' | 'stage' | 'systemsCorporals' | 'urls' | 'usability' | 'mode' | 'linksInfoApp'>
 
@@ -16,7 +17,7 @@ export const Main: FC<Props> = ({
       <Section content={description} title='Descripción'>
         <article
           className='text-text-100 container-text'
-          dangerouslySetInnerHTML={{ __html: description }}
+          dangerouslySetInnerHTML={{ __html: description ? firstLetterCapitalizedHtml(description) : '' }}
         />
         <ul
           className='list-disc list-inside ml-4 text-text-100 pt-2'

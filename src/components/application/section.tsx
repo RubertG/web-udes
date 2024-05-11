@@ -1,3 +1,4 @@
+import { firstLetterCapitalizedHtml } from '@/utils/first-letter-capitalized'
 import { type ReactNode, type FC } from 'react'
 
 interface SectionProps {
@@ -18,7 +19,7 @@ export const Section: FC<SectionProps> = ({ content, title, children }) => {
         children ?? (
           <article
             className='text-text-100 container-text'
-            dangerouslySetInnerHTML={{ __html: content ?? '' }}
+            dangerouslySetInnerHTML={{ __html: content ? firstLetterCapitalizedHtml(content) : '' }}
           />
         )
       }
