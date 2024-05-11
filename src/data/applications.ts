@@ -32,7 +32,7 @@ export const applications: Application[] = [
       url: 'https://bmcmusculoskeletdisord-biomedcentral-com.ezproxy.udes.edu.co/articles/10.1186/s12891-022-05816-6#citeas:~:text=%2C%20874%20(2022)'
     }, {
       name: 'Descargar cita.',
-      url: 'https%3A//doi%2Dorg.ezproxy.udes.edu.co/10.1186/s12891%2D022%2D05816%2D6'
+      url: 'https://doi%2Dorg.ezproxy.udes.edu.co/10.1186/s12891%2D022%2D05816%2D6'
     }],
     image: 'my-exercise-messages.png',
     linksInfoApp: [{

@@ -17,14 +17,14 @@ export const USABILITY = {
 
 // Sistemas corporales
 export const SYSTEMS_CORPORALS = {
-  MUSCULOSKELETAL: 'musculoesqueletico',
+  MUSCULOSKELETAL: 'musculoesquelético',
   CARDIOVASCULAR: 'cardiovascular',
   DIGESTIVE: 'digestivo',
   URINARY: 'urinario',
   NEUROLOGICAL: 'neurológico',
   NERVOUS: 'nervioso',
   SENSORIAL: 'sensorial',
-  CARDIORESPIRATORY: 'cardiorespiratorio',
+  CARDIORESPIRATORY: 'cardiorrespiratorio',
   VESTIBULAR: 'vestibular',
   NERVOUS_CENTRAL: 'nervioso central'
 } as const

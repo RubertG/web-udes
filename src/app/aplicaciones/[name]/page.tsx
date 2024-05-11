@@ -35,7 +35,7 @@ const PageApplication: FC<Props> = ({ params: { name: nameParam } }) => {
     (app) => app.name.toLocaleLowerCase().replaceAll(' ', '-') === decodeURIComponent(nameParam)
   )
 
-  if (app == null) return <main>Página no encontrada</main>
+  if (app == null) return <main>Página no encontrada.</main>
 
   const { image, name, technology, ...otherProperties } = app
 
@@ -47,7 +47,7 @@ const PageApplication: FC<Props> = ({ params: { name: nameParam } }) => {
       >
         <div>
           <h2
-            className='font-black text-4xl md:text-[2.4rem] bg-gradient-principal bg-clip-text text-transparent text-center md:text-left'
+            className='font-black text-4xl md:text-[2.4rem] bg-gradient-principal bg-clip-text text-transparent text-center md:text-left pb-1'
           >{firstLetterCapitalized(name)}</h2>
           <p
             className='text-text-200 mt-1.5 text-center md:text-left'
@@ -64,7 +64,7 @@ const PageApplication: FC<Props> = ({ params: { name: nameParam } }) => {
           />
         </picture>
       </header>
-      <Main {...otherProperties}/>
+      <Main {...otherProperties} />
     </>
   )
 }

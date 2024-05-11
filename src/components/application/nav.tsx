@@ -6,7 +6,7 @@ export const Nav = () => {
       className='bg-gradient-principal px-3 lg:px-5 py-3'
     >
       <nav
-        className='max-w-4xl mx-auto flex justify-between'
+        className='max-w-4xl mx-auto flex justify-between items-center'
       >
         <Link
           href="/"

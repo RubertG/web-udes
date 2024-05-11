@@ -34,11 +34,11 @@ export const Main: FC<Props> = ({
         </ul>
       </Section>
       <hr
-        className='border-none outline-none h-[2px] bg-gray-200 my-10 rounded-lg'
+        className='border-none outline-none h-[2px] bg-slate-200 my-10 rounded-lg'
       />
       <Section content={accessibility} title='Accesibilidad' />
       <hr
-        className='border-none outline-none h-[2px] bg-gray-200 my-10 rounded-lg'
+        className='border-none outline-none h-[2px] bg-slate-200 my-10 rounded-lg'
       />
       {
         mode && (
@@ -48,14 +48,14 @@ export const Main: FC<Props> = ({
               title='Modo de uso'
             />
             <hr
-              className='border-none outline-none h-[2px] bg-gray-200 my-10 rounded-lg'
+              className='border-none outline-none h-[2px] bg-slate-200 my-10 rounded-lg'
             />
           </>
         )
       }
       <Section content={barriers} title='Barreras para el uso' />
       <hr
-        className='border-none outline-none h-[2px] bg-gray-200 my-10 rounded-lg'
+        className='border-none outline-none h-[2px] bg-slate-200 my-10 rounded-lg'
       />
       <Section
         title='Enlaces relacionados'
