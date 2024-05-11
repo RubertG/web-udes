@@ -1,5 +1,5 @@
 import React from 'react'
-import { IA, Separator } from '../common/icons'
+import { Separator } from '../common/icons'
 
 export const Header = () => {
   return (
@@ -11,13 +11,17 @@ export const Header = () => {
       >
         <h1
           className="font-black text-4xl lg:text-6xl text-center text-white"
-        >Tecnología y fisioterapia</h1>
+        >FisioTec</h1>
         <p
           className='text-center text-sm lg:text-base text-bg-200 mt-6'
         >
           Bienvenido a FisioTec, tu portal especializado en herramientas tecnológicas para la atención en fisioterapia. Aquí encontrarás una recopilación completa y actualizada de los últimos avances tecnológicos en el campo, fruto de un  proyecto de revisión sistemática. Encontrarás información detallada sobre las herramientas tecnológicas más innovadoras: desde apps móviles para ejercicios personalizados hasta dispositivos de realidad virtual para la rehabilitación.
         </p>
-        <IA className='w-80 md:w-1/2 mx-auto mt-5' />
+        <img
+          className='md:w-[21rem] w-72 m-auto mt-6 mb-7 object-contain gradient-image'
+          src="/apps-img/header.png"
+          alt="IA y fisioterapia"
+        />
       </section>
       <Separator />
     </header>

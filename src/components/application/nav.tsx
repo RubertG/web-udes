@@ -14,7 +14,7 @@ export const Nav = () => {
         >FisioTec</Link>
         <Link
           href="/"
-          className='hover:bg-accent-200 text-slate-100 px-4 py-1 transition-colors rounded-lg font-medium'
+          className='hover:bg-accent-200 text-slate-100 px-4 py-1.5 transition-colors rounded-lg font-medium'
           title="Ir a la página de inicio"
         >Inicio</Link>
       </nav>

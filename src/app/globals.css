@@ -12,6 +12,22 @@
   }
 }
 
+.gradient-image {
+  /*que el gradiente sea de arriba a abajo y de izquierda a derecha*/
+  mask-image: linear-gradient(
+    black 90%,
+    transparent
+  );
+}
+
+.container-text p {
+  margin-bottom: 1rem;
+}
+
+.container-text strong {
+  font-weight: 600;
+}
+
 .entrance {
   animation: entrance 0.25s ease-in-out both;
 }

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { poppins } from '@/fonts/fonts'
+import { Footer } from '@/components/layout/footer'
 
 export const metadata: Metadata = {
-  title: 'Tecnología y fisioterapia - UDES',
-  description: 'La tecnología ha transformado la fisioterapia, ofreciendo nuevas formas de abordar la rehabilitación y el tratamiento de lesiones musculoesqueléticas. Desde dispositivos portátiles de seguimiento hasta realidad virtual, estas herramientas mejoran la precisión, eficacia y experiencia del paciente en la terapia física.'
+  title: 'FisioTec',
+  description: 'Bienvenido a FisioTec, tu portal especializado en herramientas tecnológicas para la atención en fisioterapia. Aquí encontrarás una recopilación completa y actualizada de los últimos avances tecnológicos en el campo, fruto de un  proyecto de revisión sistemática. Encontrarás información detallada sobre las herramientas tecnológicas más innovadoras: desde apps móviles para ejercicios personalizados hasta dispositivos de realidad virtual para la rehabilitación.'
 }
 
 export default function RootLayout ({
@@ -14,7 +15,10 @@ export default function RootLayout ({
 }>) {
   return (
     <html lang="es">
-      <body className={`${poppins.className} bg-bg-100`}>{children}</body>
+      <body className={`${poppins.className} bg-bg-100`}>
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

@@ -21,7 +21,7 @@ export const CardApplication: FC<CardApplicationProps> = ({ application: { name,
         className='rounded-lg min-w-[9rem] lg:min-h-[10rem] overflow-hidden'
       >
         <img
-          src={`apps-img/${image}`}
+          src={`/apps-img/${image}`}
           alt={`Imagen referente a ${name}`}
           loading='lazy'
           className='w-full min-w-[9rem] lg:min-h-[10rem] h-full rounded-lg'

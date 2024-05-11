@@ -1,5 +1,4 @@
 import { ContainerApplications } from '@/components/applications/container-applications'
-import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
 
 const Page = () => {
@@ -23,7 +22,6 @@ const Page = () => {
           <ContainerApplications />
         </section>
       </main>
-      <Footer />
     </>
   )
 }

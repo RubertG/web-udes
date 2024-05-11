@@ -1,3 +1,5 @@
+import { ExternalLink } from '../common/icons'
+
 export const Footer = () => {
   return (
     <footer
@@ -7,8 +9,8 @@ export const Footer = () => {
         href="https://www.linkedin.com/in/rubert-gonzalez-8782b8252/"
         target="_blank"
         rel="noreferrer"
-        className="hover:text-primary-100 transition-color"
-        >Rubert Gonzalez.</a></p>
+        className="hover:text-primary-100 transition-color group"
+        >Rubert Gonzalez <ExternalLink className='-mt-[2px] stroke-text-100 group-hover:stroke-primary-100 transition-all' /></a></p>
     </footer>
   )
 }
