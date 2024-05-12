@@ -4,6 +4,7 @@ import { Section } from './section'
 import { type FC } from 'react'
 import { listToString } from '@/utils/list-to-string'
 import { firstLetterCapitalizedHtml } from '@/utils/first-letter-capitalized'
+import { SeparatorSection } from '../common/separator-section'
 
 type Props = Pick<Application, 'accessibility' | 'barriers' | 'description' | 'stage' | 'systemsCorporals' | 'urls' | 'usability' | 'mode' | 'linksInfoApp'>
 
@@ -33,13 +34,9 @@ export const Main: FC<Props> = ({
           </li>
         </ul>
       </Section>
-      <hr
-        className='border-none outline-none h-[2px] bg-slate-200 my-10 rounded-lg'
-      />
+      <SeparatorSection />
       <Section content={accessibility} title='Accesibilidad' />
-      <hr
-        className='border-none outline-none h-[2px] bg-slate-200 my-10 rounded-lg'
-      />
+      <SeparatorSection />
       {
         mode && (
           <>
@@ -54,9 +51,7 @@ export const Main: FC<Props> = ({
         )
       }
       <Section content={barriers} title='Barreras para el uso' />
-      <hr
-        className='border-none outline-none h-[2px] bg-slate-200 my-10 rounded-lg'
-      />
+      <SeparatorSection />
       <Section
         title='Enlaces relacionados'
       >

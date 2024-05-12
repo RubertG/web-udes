@@ -12,7 +12,7 @@ const Page = () => {
           className="font-black text-4xl lg:text-6xl text-center bg-gradient-principal bg-clip-text text-transparent pb-8"
         >Herramientas digitales</h2>
         <p
-          className='text-sm lg:text-base text-text-100'
+          className='text-text-100'
         >
           Las herramientas digitales son programas o aplicaciones diseñadas para ser utilizadas en dispositivos electrónicos como computadoras, tabletas o teléfonos inteligentes, su propósito es simplificar y mejorar una amplia variedad de tareas y procesos en diferentes campos, incluida la rehabilitación en fisioterapia, estas herramientas ayudan en la recuperación de personas con discapacidades o limitaciones físicas al permitirles realizar actividades de manera más efectiva y accesible. Además, están destinadas a facilitar el trabajo de los profesionales, mejorar el acceso a los datos de los pacientes y permitir un seguimiento más detallado y personalizado de cada caso.
         </p>

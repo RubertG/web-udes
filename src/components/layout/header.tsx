@@ -13,7 +13,7 @@ export const Header = () => {
           className="font-black text-4xl lg:text-6xl text-center text-white"
         >FisioTec</h1>
         <p
-          className='text-center text-sm lg:text-base text-bg-200 mt-6'
+          className='text-center text-bg-200 mt-6'
         >
           Bienvenido a FisioTec, tu portal especializado en herramientas tecnológicas para la atención en fisioterapia. Aquí encontrarás una recopilación completa y actualizada de los últimos avances tecnológicos en el campo, fruto de un  proyecto de revisión sistemática. Encontrarás información detallada sobre las herramientas tecnológicas más innovadoras: desde apps móviles para ejercicios personalizados hasta dispositivos de realidad virtual para la rehabilitación.
         </p>

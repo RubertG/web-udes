@@ -64,7 +64,7 @@ export const applications: Application[] = [
     usability: [USABILITY.THERAPIST, USABILITY.PATIENT],
     accessibility: 'No gratuita, prueba gratis requiere de suscripcion mensualAccesible para personas con discapacidad visual o auditiva. Compatible con teléfonos inteligentes y tabletas (iOS y Android) pero no esta disponible para Colombia.',
     mode: 'esta app es especifica para el diagnostico de EPOC el cual comprende ejercicios asistidos,educacion en salud,  retroalimentación sobre los ejercicios de respiración del usuario,seguimiento de sus síntomas.',
-    systemsCorporals: ['cardiorespiratorio'],
+    systemsCorporals: [SYSTEMS_CORPORALS.CARDIORESPIRATORY],
     barriers: 'Interfaz de usuario puede no ser intuitiva para todos los usuarios, lo que puede dificultar la navegación y el uso de la aplicación. Se necesita disponer de un dispositivo smartphone con acceso a Internet.',
     urls: [{
       name: 'Digitalización de la rehabilitación pulmonar multidisciplinar en EPOC con una aplicación para smartphones: un estudio piloto observacional internacional',

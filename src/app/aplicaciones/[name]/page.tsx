@@ -1,5 +1,6 @@
 import { Main } from '@/components/application/main'
 import { Nav } from '@/components/application/nav'
+import { SeparatorSection } from '@/components/common/separator-section'
 import { applications } from '@/data/applications'
 import { firstLetterCapitalized } from '@/utils/first-letter-capitalized'
 import { type FC } from 'react'
@@ -25,7 +26,7 @@ interface Metadata {
 export const generateMetadata = ({ params }: Props): Metadata => {
   const post = applications.find(({ name }) => name.toLocaleLowerCase().replaceAll(' ', '-') === params.name)
   return {
-    title: (post != null) ? `${post.name} - ${post.technology}` : 'Página no encontrada',
+    title: (post != null) ? `${firstLetterCapitalized(post.name)} - ${firstLetterCapitalized(post.technology)}` : 'Página no encontrada',
     description: post?.description
   }
 }
@@ -64,6 +65,7 @@ const PageApplication: FC<Props> = ({ params: { name: nameParam } }) => {
           />
         </picture>
       </header>
+      <SeparatorSection className='mx-auto max-w-4xl px-2 lg:px-0' />
       <Main {...otherProperties} />
     </>
   )
