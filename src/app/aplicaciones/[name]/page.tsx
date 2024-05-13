@@ -3,6 +3,7 @@ import { Nav } from '@/components/application/nav'
 import { SeparatorSection } from '@/components/common/separator-section'
 import { applications } from '@/data/applications'
 import { firstLetterCapitalized } from '@/utils/first-letter-capitalized'
+import { Error } from '@/components/layout/error'
 import { type FC } from 'react'
 
 export const generateStaticParams = () => {
@@ -26,7 +27,7 @@ interface Metadata {
 export const generateMetadata = ({ params }: Props): Metadata => {
   const post = applications.find(({ name }) => name.toLocaleLowerCase().replaceAll(' ', '-') === params.name)
   return {
-    title: (post != null) ? `${firstLetterCapitalized(post.name)} - ${firstLetterCapitalized(post.technology)}` : 'Página no encontrada',
+    title: (post != null) ? `${firstLetterCapitalized(post.name)} - ${firstLetterCapitalized(post.technology)}` : 'No se encontró la página',
     description: post?.description
   }
 }
@@ -36,7 +37,9 @@ const PageApplication: FC<Props> = ({ params: { name: nameParam } }) => {
     (app) => app.name.toLocaleLowerCase().replaceAll(' ', '-') === decodeURIComponent(nameParam)
   )
 
-  if (app == null) return <main>Página no encontrada.</main>
+  if (app == null) {
+    return <Error />
+  }
 
   const { image, name, technology, ...otherProperties } = app
 
