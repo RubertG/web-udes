@@ -68,7 +68,11 @@ const PageApplication: FC<Props> = ({ params: { name: nameParam } }) => {
           />
         </picture>
       </header>
-      <SeparatorSection className='mx-auto max-w-4xl px-2 lg:px-0' />
+      <div
+        className='mx-auto max-w-4xl px-2 lg:px-0'
+      >
+        <SeparatorSection />
+      </div>
       <Main {...otherProperties} />
     </>
   )
