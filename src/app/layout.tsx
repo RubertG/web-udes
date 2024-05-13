@@ -15,6 +15,9 @@ export default function RootLayout ({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <link rel="shortcut icon" href="/favicon.webp" />
+      </head>
       <body className={`${poppins.className} bg-bg-100`}>
         {children}
         <Footer />
