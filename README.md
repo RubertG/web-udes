@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FISIOTEC
 
-## Getting Started
+Este proyecto es una página web diseñada para mostrar diferentes aplicaciones utilizadas en la fisioterapia. Está desarrollado utilizando Next.js 14.
 
-First, run the development server:
+## Contenido
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Descripción del Proyecto](#descripción-del-proyecto)
+- [Características](#características)
+- [Requisitos Previos](#requisitos-previos)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Contacto](#Contacto)
+
+## Descripción del Proyecto
+
+La página web tiene como objetivo proporcionar información sobre diversas aplicaciones que pueden ser utilizadas en la fisioterapia. Cada aplicación está detallada con su descripción, modo de uso, accesibilidad, barreras para el uso y cualquier recurso adicional relevante.
+
+## Características
+
+- **Listado de Aplicaciones**: Muestra una lista de aplicaciones utilizadas en fisioterapia con detalles y descripciones.
+- **Interfaz Amigable**: Diseño intuitivo y fácil de navegar.
+- **Rendimiento**: Optimizado para un rendimiento rápido gracias a Next.js 14.
+- **Responsivo**: Adaptable a diferentes dispositivos y tamaños de pantalla.
+
+## Requisitos Previos
+
+- Node.js (versión 14 o superior)
+- npm (gestor de paquetes de Node.js)
+- Next.js (versión 14)
+
+## Instalación
+
+1. **Clonar el repositorio**
+    ```bash
+    git clone https://github.com/RubertG/web-udes.git
+    ```
+2. **Navegar al directorio del proyecto**
+    ```bash
+    cd tu-repositorio
+    ```
+3. **Instalar las dependencias**
+    ```bash
+    npm install
+    ```
+
+## Uso
+
+1. **Iniciar el servidor de desarrollo**
+    ```bash
+    npm run dev
+    ```
+2. **Abrir el navegador y visitar**
+    ```
+    http://localhost:3000
+    ```
+
+## Estructura del Proyecto
+
+La estructura principal del proyecto es la siguiente:
+
+```
+web-udes/
+├── public/
+│   ├── apps-img/
+│   └── favicon.webp
+├── src/
+│   ├── app/
+│   ├── components/
+│   |   └── application/
+│   |   └── applications/
+│   |   └── common/
+│   |   └── layout/
+│   ├── const/
+│   ├── data/
+│   ├── fonts/
+│   ├── hooks/
+│   ├── reducer/
+│   |   └── applications/
+│   ├── types/
+│   └── utils/
+├── .gitignore
+├── package.json
+├── README.md
+└── next.config.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **public/**: Contiene activos públicos como imágenes y favicon.
+- **src/app/**: Páginas de la aplicación Next.js.
+- **src/components/**: Componentes reutilizables de React.
+- **src/const/**: Constantes globales.
+- **src/data/**: Datos de la aplicación.
+- **src/fonts/**: Fuentes de la aplicación.
+- **src/hooks/**: Funciones de hooks.
+- **src/reducer/**: Reducers de la aplicación.
+- **src/types/**: Tipos de datos de la aplicación.
+- **src/utils/**: Utilidades y funciones auxiliares.
+- **.gitignore**: Archivos y directorios ignorados por Git.
+- **package.json**: Información del proyecto y dependencias.
+- **next.config.js**: Configuración de Next.js.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contacto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Si tienes alguna pregunta, necesitas más información o quieres crear una aplicación web, no dudes en contactame a través de mi [página de contacto](https://rubertweb.dev/contact).
