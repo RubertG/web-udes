@@ -150,7 +150,7 @@ export const applications: Application[] = [
       name: 'Entrenamiento en resiliencia asistida por biorretroalimentación para el estrés traumático y operativo: análisis preliminar de una metodología de salud digital autodidacta.',
       url: 'https://doi-org.ezproxy.udes.edu.co/10.2196/12590'
     }],
-    image: 'bard.png',
+    image: 'bard.jpg',
     linksInfoApp: [{
       name: 'Enlace de descarga en Apkcombo.',
       url: 'https://apkcombo.com/es/bart-biofeedback-assisted-resi/air.org.rti.phit.bart/download/apk#old-versions'
@@ -185,7 +185,7 @@ export const applications: Application[] = [
     technology: 'La aplicación Nola es un software de Inteligencia artificial',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.ESTUDENTS],
-    accessibility: 'Gratuita Plan Básico, requiere de suscrpcion mensua compatible en cualquier navegador moderno Accesibles para personas con discapacidad auditiva y baja visión',
+    accessibility: 'Requiere una suscripción mensual. La plataforma es compatible con cualquier navegador moderno y está diseñada para ser accesible para personas con discapacidad auditiva y baja visión, asegurando una experiencia inclusiva para todos los usuarios.',
     mode: 'se utiliza como tratamiento fisioterapéutico independiente o adicional. Proporciona ejercicios y recomendaciones personalizadas para reducir el dolor y mejorar la fuerza y la movilidad en pacientes con enfermedades MSK.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
     barriers: 'Disponible solo en idioma aleman.',
@@ -226,9 +226,9 @@ export const applications: Application[] = [
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'Requiere  de suscripcion premium. Compatible  para teléfonos inteligentes o tabletas iOS y Android). Restricciones para personas con afecciones del sistema nervioso central (Parkinson, esclerosis múltiple, accidente vascular cerebral) o trastorno psiquiátrico.',
-    mode: 'La aplicacion ofrece una biblioteca de ejercicios predefinidos con instruciciones detalladas en video,adapta los ejercicios a las necesidades y capacidades, Brinda Monitoreo y  retroalimentación de la actividad en tiempo real, recopila datos  de seguimiento de la actividad física, monitoriza el progreso de las usuarias a distancia y ofrece apoyo y asesoramiento personalizado.',
+    mode: 'La aplicacion ofrece una biblioteca de ejercicios predefinidos con instruciciones detalladas en video, adapta los ejercicios a las necesidades y capacidades, brinda monitoreo y retroalimentación de la actividad en tiempo real, recopila datos de seguimiento de la actividad física, monitoriza el progreso de las usuarias a distancia y ofrece apoyo y asesoramiento personalizado.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL, SYSTEMS_CORPORALS.NERVOUS_CENTRAL],
-    barriers: 'Usuarios  con alteraciones cognitivas y con problemas de motricidad fina. Está disponible en ingles',
+    barriers: 'Usuarios con alteraciones cognitivas y con problemas de motricidad fina. Está disponible en ingles',
     urls: [{
       name: 'Rehabilitación digital después de una artroplastia de rodilla: un estudio de cohorte longitudinal prospectivo multicéntrico',
       url: 'https://doi.org/10.3390/jpm13050824'
@@ -248,7 +248,7 @@ export const applications: Application[] = [
   },
   {
     description: '<p>Physitrack permite el fisioterapeuta hacer un seguimiento detallado de su progreso y intervenir si es necesario, así como informar de manera segura cuánto completó de un ejercicio determinado y si experimentó dolor.</p>',
-    technology: 'software de inteligencia artificial y Realidad aumentada.',
+    technology: 'software de inteligencia artificial.',
     stage: [STAGES.MAINTENANCE],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'La aplicación está disponible para dispositivos iOS y Android. Es gratuita para los pacientes, las clínicas de fisioterapia deben pagar una suscripción para poder utilizarla.',
@@ -294,7 +294,7 @@ export const applications: Application[] = [
   },
   {
     description: '<p>Hospital Fit es una aplicación móvil diseñada para pacientes hospitalizados que se conecta a un acelerómetro para teléfono inteligente, se conecta al monitor de actividad MOX a través de Bluetooth para recopilar datos de actividad física,el dispositivo contiene un sensor acelerómetro triaxial (ADXL362.</p><p>La aplicación proporciona datos sobre la cantidad de tiempo que los pacientes pasan de pie y caminando cada día, lo que permite un seguimiento preciso de su actividad. </p><p>La aplicación además, ofrece información sobre el progreso de la recuperación y brinda un programa de ejercicios personalizado con videos para ayudar en el proceso de rehabilitación.</p>',
-    technology: 'software: Hospital Fit inteligencia Artificial (IA): Internet de las cosas (IoT)',
+    technology: 'Software de inteligencia artificial.',
     stage: [STAGES.MAINTENANCE],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'La aplicación está disponible de forma gratuita para pacientes que se han sometido a una cirugía de reemplazo articular en el hospital piloto. compatible con una amplia gama de dispositivos móviles, incluidos teléfonos inteligentes y tabletas.  disponible para dispositivos Android e iOS.',
@@ -307,8 +307,8 @@ export const applications: Application[] = [
     }],
     image: 'hospital-fit.png',
     linksInfoApp: [{
-      name: 'Enlace de descarga en Play Store.',
-      url: 'https://play.google.com/store/apps/details?id=fitapp.fitapp'
+      name: 'Enlace para la página oficial de Hospital Fit.',
+      url: 'https://hospital-fit.com/'
     }],
     name: 'Hospital Fit'
   },
@@ -462,7 +462,7 @@ export const applications: Application[] = [
   },
   {
     description: '<p>My mobility y Apple Watch se unen para ofrecer una solución completa que respalda tanto la preparación prequirúrgica como la recuperación de los pacientes mediante la supervisión remota y la recolección de datos clínicos, esta plataforma digital proporciona apoyo continuo y orientación a los pacientes, garantizando una experiencia conectada,brinda  información en tiempo real y retroalimentación valiosa de los pacientes para mejorar la atención, los resultados y la satisfacción durante todo el proceso, desde la preparación hasta la recuperación quirúrgica.</p><p> Esta aplicación ofrece recursos educativos accesibles, respuestas a preguntas frecuentes y ejercicios adaptados a cada paciente mediante alertas como las excepciones de marcha, detecta posibles problemas en la recuperación y permite ajustar el plan de atención según sea necesario,facilita tanto a los pacientes como a los equipos de atención realizar un seguimiento efectivo de la recuperación, enfocándose en actividades específicas como caminar y estableciendo metas alcanzables basadas en datos comparativos con otros pacientes en situaciones similares.</p>',
-    technology: 'software de Inteligencia artificial (IA),  Realidad virtual (RV) e internet de las cosas (IoT)',
+    technology: 'software de Inteligencia artificial.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'Requiere suscripcion mensual ',
@@ -502,7 +502,7 @@ export const applications: Application[] = [
   },
   {
     description: '<p>FocusMotion es una tecnología de recuperación ortopédica innovadora,se  centra en capturar la actividad física y los movimientos de los pacientes de manera precisa, utilizando una combinación de una rodillera inteligente y una aplicación móvil, esta tecnología se integra con dispositivos como relojes inteligentes y pulseras de actividad física, permite realizar un seguimiento exhaustivo de los ejercicios anaeróbicos, así como de otros movimientos del usuario.<p></p>La aplicación aprovecha diversas funcionalidades del dispositivo, como el giroscopio, el acelerómetro, el magnetómetro y la electromiografía, para registrar y comprender los movimientos y el ritmo del usuario de manera automatizada. Este enfoque ofrece a los terapeutas una herramienta poderosa para monitorear la actividad física de sus pacientes de manera más precisa y eficiente.</p>',
-    technology: 'Maneja una inteligencia artificial',
+    technology: 'Inteligencia artificial',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'Gratis para dispositivos móviles Android e iOS. Requiere un smartphone o tablet compatible con RA.',
@@ -515,8 +515,8 @@ export const applications: Application[] = [
     }],
     image: 'focusmotion-health.png',
     linksInfoApp: [{
-      name: 'Más información en la página de FocusMotion.',
-      url: 'https://www.focusmotion.io/'
+      name: 'Enlace de descarga en Play Store.',
+      url: 'https://play.google.com/store/apps/details?id=com.globusmedical.tkr&hl=en_US'
     }],
     name: 'FocusMotion Health'
   },
@@ -562,7 +562,7 @@ export const applications: Application[] = [
   },
   {
     description: '<p>La aplicación ofrece un enfoque completo, científico y fácil de usar para abordar el dolor de espalda,proporciona una guía paso a paso que incluye ejercicios terapéuticos y contenido educativo, está diseñada para personas diagnosticadas con dolor de espalda que no han encontrado alivio con otros tratamientos,personaliza los ejercicios según el nivel de condición física y el dolor del usuario mediante algoritmos inteligentes,evalúa la ubicación, intensidad del dolor y nivel de condición física para crear un plan de entrenamiento adaptado,los ejercicios se ajustan continuamente según la retroalimentación del usuario,los videos de alta calidad aseguran la correcta ejecución de los ejercicios. </p><p>Kaia motiva al usuario para alcanzar sus objetivos de entrenamiento personales y realiza un seguimiento del progreso,frece una variedad de ejercicios, desde fortalecimiento muscular hasta técnicas de relajación, junto con conocimientos sobre el dolor y consejos para manejarlo.</p>',
-    technology: 'Inteligencia artificial, realidad virtual e Internet de las cosas.',
+    technology: 'Inteligencia artificial.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
     accessibility: 'No gratuita, prueba gratuita por 7 dias. Disponible para iOS y Android Requiere un teléfono inteligente o tableta compatible.',
@@ -588,10 +588,10 @@ export const applications: Application[] = [
   },
   {
     description: '<p>SelfBack ofrece un programa de autogestión que se adapta semanalmente según el progreso del usuario,este incluye ejercicios, material educativo y un objetivo de actividad, todo ajustable para adaptarse al tiempo disponible del usuario,además del programa principal, proporciona diversas herramientas para el autocontrol durante episodios de dolor intenso, como ejercicios para aliviar el dolor y sugerencias de posición para dormir.</p>',
-    technology: 'El software SelfBack tiene una Inteligencia artificial.',
+    technology: 'Software de Inteligencia artificial.',
     stage: [STAGES.IMPLEMENTATION],
     usability: [USABILITY.THERAPIST, USABILITY.USERS],
-    accessibility: 'Gratuita pero no esta disponible en colombia. La aplicación está disponible para iOS y Android. ',
+    accessibility: 'Esta aplicación está disponible en el idioma ingles. Es gratuita pero no esta disponible en Colombia. La aplicación está disponible para iOS y Android.',
     mode: 'La aplicación proporciona un plan de ejercicios personalizado para cada usuario, brinda educacion sobre el dolor lumbar y cómo manejarlo. permite a los usuarios conectarse con otros usuarios de SelfBack para obtener apoyo y consejos. Brinda Seguimiento del progreso.',
     systemsCorporals: [SYSTEMS_CORPORALS.MUSCULOSKELETAL],
     barriers: 'No esta disponible en Colombia. Solo esta disponible en europa y en el idioma ingles.',
