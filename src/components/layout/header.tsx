@@ -18,9 +18,9 @@ export const Header = () => {
           Bienvenido a FisioTec, tu portal especializado en herramientas tecnológicas para la atención en fisioterapia. Aquí encontrarás una recopilación completa y actualizada de los últimos avances tecnológicos en el campo, fruto de una revisión sistemática. Encontrarás información detallada sobre las herramientas tecnológicas más innovadoras: desde apps móviles para ejercicios personalizados hasta dispositivos de realidad virtual para la rehabilitación.
         </p>
         <img
-          className='md:w-[21rem] w-72 m-auto mt-6 mb-7 object-contain gradient-image'
-          src="/apps-img/header.png"
-          alt="IA y fisioterapia"
+          className='md:w-[21rem] w-72 m-auto mt-6 mb-7 object-contain gradient-image aspect-[144/120]'
+          src="/header/header.png"
+          alt="Imagen referente a la IA y fisioterapia"
         />
       </section>
       <Separator />
