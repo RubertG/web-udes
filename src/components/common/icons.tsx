@@ -36,6 +36,13 @@ export const Loading: FC<LoadingProps> = ({ className = '', loading = true, colo
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" className={`${className} transition-opacity ${loading ? 'opacity-100' : 'opacity-0'}`}><path fill="none" stroke={color} strokeWidth="15" strokeLinecap="round" strokeDasharray="300 385" strokeDashoffset="0" d="M275 75c0 31-27 50-50 50-58 0-92-100-150-100-28 0-50 22-50 50s23 50 50 50c58 0 92-100 150-100 24 0 50 19 50 50Z"><animate attributeName="stroke-dashoffset" calcMode="spline" dur="2" values="685;-685" keySplines="0 0 1 1" repeatCount="indefinite"></animate></path></svg>
   )
 }
+
+export const NotFound: FC<IconProps> = ({ className = '', 'aria-hidden': ariaHidden = true }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`icon icon-tabler icons-tabler-outline icon-tabler-error-404 ${className}`}><path stroke="none" d="M0 0h24v24H0z" fill="none" aria-hidden={ariaHidden} /><path d="M3 7v4a1 1 0 0 0 1 1h3" /><path d="M7 7v10" /><path d="M10 8v8a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-8a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1z" /><path d="M17 7v4a1 1 0 0 0 1 1h3" /><path d="M21 7v10" /></svg>
+  )
+}
+
 export const Check: FC<IconProps> = ({ className = '', 'aria-hidden': ariaHidden = true }) => {
   return (
       <svg
