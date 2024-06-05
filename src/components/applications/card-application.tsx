@@ -15,7 +15,7 @@ export const CardApplication: FC<CardApplicationProps> = ({ application: { name,
     <Link
       href={`/aplicaciones/${nameRef}`}
       title={`Ir a la página de ${name}`}
-      className='block rounded-lg shadow-principal overflow-hidden p-3 bg-bg-100 border border-gray-200 hover:scale-105 transition-all'
+      className='block rounded-lg shadow-principal overflow-hidden p-3 bg-bg-100 border border-gray-200 hover:scale-105 transition-all entrance'
     >
       <picture
         className='rounded-lg min-w-[9rem] lg:min-h-[10rem] overflow-hidden'
