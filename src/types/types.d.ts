@@ -39,6 +39,8 @@ export interface OptionsSelect {
 
 export interface AplicationStateReducer {
   applications: Application[]
+  search: string | null
+  filters: StateSelects
 }
 
 export type AplicationActionReducer = { type: 'FILTER', payload: { stage: Stage | null, system: SystemCorporal | null } }

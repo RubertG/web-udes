@@ -6,6 +6,7 @@ export const reducer = (state: AplicationStateReducer, action: AplicationActionR
   if (action.type === 'FILTER') {
     return {
       ...state,
+      filters: action.payload,
       applications: filterApplications(apps, action.payload)
     }
   }
@@ -13,6 +14,11 @@ export const reducer = (state: AplicationStateReducer, action: AplicationActionR
   if (action.type === 'RESET') {
     return {
       ...state,
+      search: null,
+      filters: {
+        stage: null,
+        system: null
+      },
       applications: apps
     }
   }
@@ -20,6 +26,11 @@ export const reducer = (state: AplicationStateReducer, action: AplicationActionR
   if (action.type === 'FILTER_BY_NAME') {
     return {
       ...state,
+      filters: {
+        stage: null,
+        system: null
+      },
+      search: action.payload,
       applications: apps.filter(app => app.name.toLowerCase().includes(action.payload.toLowerCase()))
     }
   }
