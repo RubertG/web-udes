@@ -11,11 +11,11 @@ export const Header = () => {
       >
         <h1
           className="font-black text-4xl lg:text-6xl text-center text-white"
-        >FisioTec</h1>
+        >DigiCare Physio</h1>
         <p
           className='text-center text-bg-200 mt-6 px-2 lg:px-0'
         >
-          Bienvenido a FisioTec, tu portal especializado en herramientas tecnológicas para la atención en fisioterapia. Aquí encontrarás una recopilación completa y actualizada de los últimos avances tecnológicos en el campo, fruto de una revisión sistemática. Encontrarás información detallada sobre las herramientas tecnológicas más innovadoras: desde apps móviles para ejercicios personalizados hasta dispositivos de realidad virtual para la rehabilitación.
+          Bienvenido a DigiCare Physio, tu portal especializado en herramientas tecnológicas para la atención en fisioterapia. Aquí encontrarás una recopilación completa y actualizada de los últimos avances tecnológicos en el campo, fruto de una revisión sistemática. Encontrarás información detallada sobre las herramientas tecnológicas más innovadoras: desde apps móviles para ejercicios personalizados hasta dispositivos de realidad virtual para la rehabilitación.
         </p>
         <img
           className='md:w-[21rem] w-72 m-auto mt-6 mb-7 object-contain gradient-image aspect-[144/120]'

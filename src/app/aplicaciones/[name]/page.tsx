@@ -5,6 +5,7 @@ import { applications } from '@/data/applications'
 import { firstLetterCapitalized } from '@/utils/first-letter-capitalized'
 import { Error } from '@/components/layout/error'
 import { type FC } from 'react'
+import { type Metadata } from 'next'
 
 export const generateStaticParams = () => {
   return applications.map(({ name }) => ({
@@ -19,16 +20,20 @@ interface Props {
   }
 }
 
-interface Metadata {
-  title: string | undefined
-  description: string | undefined
-}
-
 export const generateMetadata = ({ params }: Props): Metadata => {
   const post = applications.find(({ name }) => name.toLocaleLowerCase().replaceAll(' ', '-') === params.name)
   return {
     title: (post != null) ? `${firstLetterCapitalized(post.name)} - ${firstLetterCapitalized(post.technology)}` : 'No se encontró la página',
-    description: post?.description
+    description: post?.description,
+    metadataBase: new URL('https://digi-care-physio.vercel.app/'),
+    keywords: 'Fisioterapia, IA, UDES, App, Mobile, Web',
+    openGraph: {
+      title: (post != null) ? `${firstLetterCapitalized(post.name)} - ${firstLetterCapitalized(post.technology)}` : 'No se encontró la página',
+      description: post?.description,
+      images: '/apps-img/' + post?.image,
+      type: 'website',
+      url: 'https://digi-care-physio.vercel.app/' + params.name
+    }
   }
 }
 
