@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { poppins } from '@/fonts/fonts'
-import { Footer } from '@/components/layout/footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://digi-care-physio.vercel.app/'),
@@ -30,7 +29,6 @@ export default function RootLayout ({
       </head>
       <body className={`${poppins.className} bg-bg-100`}>
         {children}
-        <Footer />
       </body>
     </html>
   )
