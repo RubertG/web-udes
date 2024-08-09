@@ -21,9 +21,10 @@ interface Props {
 }
 
 export const generateMetadata = ({ params }: Props): Metadata => {
-  const post = applications.find(({ name }) => name.toLocaleLowerCase().replaceAll(' ', '-') === params.name)
+  const nameParams = decodeURIComponent(params.name).replaceAll('-', ' ')
+  const post = applications.find(({ name }) => name.toLocaleLowerCase() === nameParams)
   return {
-    title: (post != null) ? `${firstLetterCapitalized(post.name)} - ${firstLetterCapitalized(post.technology)}` : 'No se encontró la página',
+    title: (post != null) ? `${firstLetterCapitalized(post.name)} - ${firstLetterCapitalized(post.technology)}` : 'DigiCare Physio',
     description: post?.description,
     metadataBase: new URL('https://digi-care-physio.vercel.app/'),
     keywords: 'Fisioterapia, IA, UDES, App, Mobile, Web',
