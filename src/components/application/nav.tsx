@@ -11,7 +11,7 @@ export const Nav = () => {
         <Link
           href="/"
           className='text-xl lg:text-2xl font-bold text-slate-100'
-        >FisioTec</Link>
+        >DigiCare Physio</Link>
         <Link
           href="/"
           className='hover:bg-accent-200 text-slate-100 px-4 py-1.5 transition-colors rounded-lg font-medium'

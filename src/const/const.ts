@@ -12,7 +12,7 @@ export const USABILITY = {
   PATIENT: 'pacientes',
   USERS: 'usuarios',
   INVESTIGATORS: 'investigadores',
-  ESTUDENTS: 'estudiantes universitarios o posgraduados profesionalmente calificados'
+  ESTUDENTS: 'estudiantes universitarios o profesionales calificados'
 } as const
 
 // Sistemas corporales
