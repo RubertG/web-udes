@@ -4,12 +4,12 @@ import { Separator } from '../common/icons'
 export const Header = () => {
   return (
     <header
-      className='bg-gradient-principal relative'
+      className='bg-gradient-principal relative pt-3'
     >
       <img
         src='/logo.png'
         alt='Logo de la Universidad de Santander'
-        className='w-full img-transparent max-w-[400px] ml-12 pt-3'
+        className='w-full mx-auto lg:ml-12 max-w-[300px] rounded-lg'
       />
       <section
         className='max-w-4xl mx-auto py-8 px-2 md:px-0'

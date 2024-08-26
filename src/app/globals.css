@@ -4,7 +4,7 @@
 
 .img-transparent {
 	mix-blend-mode: multiply;
-	background-color: white;
+	background-color: transparent;
 }
 
 .scrollbar-none::-webkit-scrollbar {
